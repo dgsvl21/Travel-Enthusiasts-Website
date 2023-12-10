@@ -107,7 +107,7 @@ body::-webkit-scrollbar-thumb:hover {
   left: 0px;
 }
 
-.txtBtn {
+.search-Btn {
   font-style:italic;
 }
 
@@ -752,6 +752,29 @@ main {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
-  max-width: 110px; /* Ajuste conforme necessário */
+  max-width: 110px;
   margin: 0 auto;
+}
+
+/* About Travel Enthusiasts */
+.about-TE {
+  
+}
+
+.about-TE h6{
+  font-family: 'Spectral', serif;
+  font-style: italic;
+  font-size: 15px;
+  font-weight: 100;
+  color: #384469;
+}
+
+.about-TE h1 {
+  font-family: serif;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 55px;
+  color: #384469;
+  margin-top: -35px;
+  margin-left: 0px;
 }
