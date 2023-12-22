@@ -1,3 +1,4 @@
+//arrow down animation btn
 function scrollToMain() {
   const mainSection = document.getElementById("main");
   window.scrollTo({
@@ -6,11 +7,13 @@ function scrollToMain() {
   })
 }
 
+//search bar destinations
 const destinations = {
   //adicionar destinos
-  //exemplo -> porto: 'porto.html'
+  //porto: 'porto.html'
 };
 
+//working search bar
 function searchDestination() {
   var destination = document.getElementById("searchInput").value.toLowerCase();
   console.log("Destination:", destination);
@@ -22,3 +25,17 @@ function searchDestination() {
   alert('Not found');
   }
 }
+
+//scroll to-top btn
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  })
+}
+
+//dropdown menu
+
+
+
+

@@ -107,10 +107,6 @@ body::-webkit-scrollbar-thumb:hover {
   left: 0px;
 }
 
-.search-Btn {
-  font-style:italic;
-}
-
 .loginBtn {
   cursor: pointer;
   width: 60px;
@@ -180,7 +176,6 @@ body::-webkit-scrollbar-thumb:hover {
   width: 560px;
   padding: 13px;
   border: none;
-  border-radius: 5px;
   margin-right: 55px;
   font-size: 25px;
   font-family: serif;
@@ -191,12 +186,13 @@ body::-webkit-scrollbar-thumb:hover {
 .barra-de-pesquisa input[type="textBox"]::placeholder {
   text-align: right;
   margin-left: 180px;
+  margin-right: 90px;
+  font-size: 25px;
+  color: #aeaeae;
 }
 
-::-webkit-input-placeholder {
-  font-size: 25px;
-  margin-right: 90px;
-  color: #aeaeae;
+.search-Btn {
+  font-style:italic;
 }
 
 .barra-de-pesquisa button[type="searchBTN"] {
@@ -275,31 +271,82 @@ body::-webkit-scrollbar-thumb:hover {
   -webkit-animation-delay:0s;
 }
 
+
 /* Tudo relativo a navbar apos landing page */
 .navbar {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   background-color: rgb(56, 68, 105);
-  padding: 7px; /* alterar largura da navbar */
+  padding: 7px;
 }
 
-#logo-container {
+.navbarlogo-container {
   flex-shrink: 0;
-  display: flex;
-  align-items: center;
-  margin-right: auto;
+  margin-left: auto;
+  margin-right: 890px;
 }
 
 #nav-logo {
   width: 113px;
   height: auto;
-  margin: 0;
-  align-items: center;
 }
 
 
+/*Menu dropdown*/
+.menudropdown-container {
+  order: -1;
+}
+
+.menu-links {
+  display: flex;
+  align-items: center;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.275);
+}
+
+.dropdown-content a {
+  color: #384469;
+  font-size: large;
+  font-family: 'Spectral', serif;
+  font-style: italic;
+  background-color: #ffffff;
+  padding: 12px 16px;
+  display: block;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #0000001c;
+}
+
+
+
 /* Conteudo do resto da pagina */
+
 /* POPULAR DESTINATIONS */
 main {
   background-color: #ECE9DB;
@@ -387,6 +434,12 @@ main {
   margin-top: 24px;
   margin-left: -10px;
   cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+.descricao-paris button:hover {
+  background-color: #D5D1BD;
+  color: #ffffff;
 }
 
 /*LONDON*/
@@ -448,6 +501,12 @@ main {
   border-radius: 2px;
   margin-left: -10px;
   cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+.descricao-london button:hover {
+  background-color: #D5D1BD;
+  color: #ffffff;
 }
 
 /*MILANO*/
@@ -509,6 +568,12 @@ main {
   border-radius: 2px;
   margin-left: -10px;
   cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+.descricao-milan button:hover {
+  background-color: #D5D1BD;
+  color: #ffffff;
 }
 
 /* PD see all btn */
@@ -523,6 +588,11 @@ main {
   border-radius: 2px;
   cursor: pointer;
   margin: 20px auto 0;
+  transition: background-color 0.5s ease;
+}
+
+.see-all-pd_btn:hover {
+  background-color: #272f49;
 }
 
 
@@ -606,6 +676,12 @@ main {
   margin-top: 24px;
   margin-left: -10px;
   cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+.descricao-porto button:hover {
+  background-color: #D5D1BD;
+  color: #ffffff;
 }
 
 /* NEW YORK */
@@ -669,6 +745,12 @@ main {
   margin-top: 24px;
   margin-left: -10px;
   cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+.descricao-newyork button:hover {
+  background-color: #D5D1BD;
+  color: #ffffff;
 }
 
 /* DUBAI */
@@ -732,6 +814,12 @@ main {
   margin-top: 24px;
   margin-left: -10px;
   cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+.descricao-dubai button:hover {
+  background-color: #D5D1BD;
+  color: #ffffff;
 }
 
 /* TE R see all btn */
@@ -746,6 +834,11 @@ main {
   border-radius: 2px;
   cursor: pointer;
   margin: 20px auto 0;
+  transition: background-color 0.5s ease;
+}
+
+.see-all-te_r_btn:hover {
+  background-color: #272f49;
 }
 
 .see_all-btns {
@@ -756,17 +849,20 @@ main {
   margin: 0 auto;
 }
 
+
 /* About Travel Enthusiasts */
 .about-TE {
-  
+  margin-top: 125px;
 }
 
-.about-TE h6{
+.date-TE{
   font-family: 'Spectral', serif;
   font-style: italic;
   font-size: 15px;
   font-weight: 100;
   color: #384469;
+  margin-top: 100px;
+  margin-left: 500px;
 }
 
 .about-TE h1 {
@@ -776,5 +872,227 @@ main {
   font-size: 55px;
   color: #384469;
   margin-top: -35px;
-  margin-left: 0px;
+  margin-left: 500px;
+}
+
+.resumo-TE {
+  background-color: #E6E3D2;
+  border: 4px solid #D5D1BD;
+  padding: 10px;
+  margin-top: -25px;
+  margin-left: 500px;
+  margin-right: 500px;
+}
+
+.resumo-TE p { 
+  font-family: 'Spectral', serif;
+  font-style: italic;
+  font-size: 25px;
+  color: #384469;
+  text-shadow: 1px 0px 0px #384469;
+  filter: brightness(1.2); 
+  text-align: center;
+  margin-top: 25px;
+}
+
+.assinatura-DS {
+  margin-top: 10px;
+  margin-left: 500px;
+}
+
+.assinatura-DS img {
+  max-width: 10%;
+  height: auto;
+}
+
+.DS-CEO {
+  font-family: 'Spectral', serif;
+  font-style: italic;
+  font-size: 15px;
+  font-weight: 100;
+  color: #384469;
+  margin-top: 1px;
+  margin-left: 500px;
+  margin-bottom: 0;
+}
+
+/* BTN scroll up */
+.up-arrow-btn {
+  width: 40px;
+  height: 40px;
+  margin-left: 1850px;
+  margin-top: 200px;
+  color: #384469;
+  background-color: transparent;
+  border: none;
+  padding: 0; 
+  cursor: pointer;
+}
+
+
+/* FOOTER */
+.footer-TE {
+  background-color: #384469;
+  color: #fff;
+  padding: 4px 0 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-conteudo {
+  position: relative;
+}
+
+/* Logo and Socials */
+.footerlogo-container {
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+.footerlogo-container img {
+  width: 320px;
+  height: auto;
+}
+
+.socials-container {
+  display: flex;
+  margin-top: 25px;
+  margin-left: 115px;
+}
+
+.socials-container img {
+  width: 40px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.twitter { /* posicionar logo twitter */
+  margin-left: 13px;
+}
+
+.rights-reservedTXT {
+  font-family: 'Spectral', serif;
+  font-size: 10px;
+  font-weight: 600;
+  color: #ffffffc5;
+  margin-bottom: 0px;
+  margin-left: 82px;
+}
+
+
+/* Linha vertical 1 */
+.vertical-line1 {
+  border-left: 1px solid #ffffffa4;
+  height: 180px;
+  position: absolute;
+  top: 15px;
+  left: 420px;
+  bottom: 0;
+}
+
+
+/* Newletter */
+.newsletter-txt {
+  font-family: serif;
+  font-style: italic;
+  position: absolute;
+  top: -20%; 
+  left: 850px; 
+  font-size: 35px;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.616);
+}
+
+.newsletter-container {
+  width: 800px;
+  background-color: transparent;
+  border-radius: 2px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 650px;
+  margin: 0;
+  top: 130px;
+  transform: translateY(-50%);
+}
+
+.newsletter-container input[type="emailInput"] {
+  width: 500px;
+  padding: 9px;
+  box-sizing: border-box;
+  font-family: 'Spectral', serif;
+  font-style: italic;
+  font-size: 15px;
+  outline: 0;
+}
+
+.newsletter-container input[type="emailInput"]::placeholder {
+  font-size: 15px;
+  font-family: 'Spectral', serif;
+  font-style: italic;
+}
+
+button[type="subBtn"] {
+  width: 100px;
+  padding: 8px;
+  font-family: 'Spectral', serif;
+  font-size: 15px;
+  text-align: center;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 3px;
+  background-color: #384469; 
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 0;
+}
+
+button[type="subBtn"]:hover {
+  background-color: #272f49;
+}
+
+
+/* Linha vertical 2 */
+.vertical-line2 {
+  border-left: 1px solid #ffffffa4;
+  height: 180px;
+  position: absolute;
+  top: 15px;
+  left: 1480px;
+  bottom: 0;
+}
+
+
+/* Contacts + Terms + Privacy */
+.containerTxt-1 {
+  font-family: serif;
+  font-style: italic;
+  font-size: 25px;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.616);
+  margin-left: 1650px;
+  margin-top: -150px;
+}
+
+.containerTxt-2 {
+  font-family: serif;
+  font-style: italic;
+  font-size: 25px;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.616);
+  margin-left: 1620px;
+  margin-top: -30px;
+}
+
+.containerTxt-3 {
+  font-family: serif;
+  font-style: italic;
+  font-size: 25px;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.616);
+  margin-left: 1630px;
+  margin-top: -30px;
+  margin-bottom: 10px;
 }
