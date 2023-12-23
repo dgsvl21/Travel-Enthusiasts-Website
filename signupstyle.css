@@ -1,0 +1,121 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #9a8f78;
+}
+
+/* background */
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}  
+
+/*Home back-btn */
+.back-btn {
+  margin-left: -15px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* Formulario */
+.form-container {
+  width: 480px;
+  height: 680px;
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.863) 0px 5px 15px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 20px 30px;
+  align-items: center;
+}
+
+/*TE Titulo*/
+.TE-title {
+  font-family: serif;
+  font-style: italic;
+  font-size: 47px;
+  font-weight: 600;
+  color: #384469;
+  text-shadow: 1px 0 1dvi #0000004c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+/* Email - Nome - Password */
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.input {
+  font-family: 'Spectral', serif;
+  font-style: italic;
+  font-size: 20px;
+  border-radius: 5px;
+  border: 1px solid #384469;
+  outline: 0;
+  box-sizing: border-box;
+  padding: 12px 15px;
+}
+  
+/*Join Now Btn*/
+.signup-btn {
+  padding: 10px 15px;
+  font-family: 'Spectral', serif;
+  font-style: italic;
+  font-size: 22px;
+  border-radius: 10px;
+  border: 0;
+  outline: 0;
+  background: #384469;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+.signup-btn:hover {
+  background-color: #272f49;
+}
+
+/* Login */
+.login-label {
+  margin: 0;
+  font-family: 'Spectral', serif;
+  font-style: italic;
+  font-size: 17px;
+  color: #000000;
+}
+
+.login-link {
+  margin-left: 1px;
+  font-family: 'Spectral', serif;
+  font-weight: 600;
+  font-size: 17px;
+  color: #354165ae;
+  text-decoration: underline;
+  text-decoration-color: #354165ae;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.login-link:hover {
+  color: #191d2d;
+  text-decoration-color: #191d2d;
+}
