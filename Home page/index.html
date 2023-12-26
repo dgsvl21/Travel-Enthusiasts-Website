@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Travel Enthusiasts</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@300;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <div class="landing-container" id="landing-section">
+            <div class="landing-background"></div>
+            <div class="landing-image"></div>
+            <div class="additional-layer1"></div>    
+            <div class="additional-layer2"></div>
+
+            <header>
+                <nav class="logo-login_signup">
+                    <img id="logo" src="/Images\TE logo.png" alt="TravelEnthusiasts"> 
+                    <a href="/Login page/login.html">
+                        <button  class="loginBtn" type="button">Login</button>
+                    </a>
+                    <a href="/Signup page/signup.html">
+                        <button class="signupBtn" type="button">Join</button>
+                    </a>
+                </nav>
+            </header>
+            
+            <h1 class="h1-landing">Find your destiny</h1>
+            <div class="barra-de-pesquisa">
+                <form>
+                    <input type="textBox" id="searchInput" placeholder="What would you like to visit?">
+                    <button class="search-Btn" type="searchBTN" onclick="searchDestination()">Search
+                        <svg class="icon-aviao" xmlns="http://www.w3.org/2000/svg" height="12" width="13.5" viewBox="0 0 576 512">
+                            <path d="M482.3 192c34.2 0 93.7 29 93.7 64c0 36-59.5 64-93.7 64l-116.6 0L265.2 495.9c-5.7 10-16.3 16.1-27.8 16.1l-56.2 0c-10.6 0-18.3-10.2-15.4-20.4l49-171.6L112 320 68.8 377.6c-3 4-7.8 6.4-12.8 6.4l-42 0c-7.8 0-14-6.3-14-14c0-1.3 .2-2.6 .5-3.9L32 256 .5 145.9c-.4-1.3-.5-2.6-.5-3.9c0-7.8 6.3-14 14-14l42 0c5 0 9.8 2.4 12.8 6.4L112 192l102.9 0-49-171.6C162.9 10.2 170.6 0 181.2 0l56.2 0c11.5 0 22.1 6.2 27.8 16.1L365.7 192l116.6 0z"/>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+            
+            <button class="scroll-button" onclick="scrollToMain()">
+                <svg class="arrows">
+                    <path class="a1" d="M0 0 L30 32 L60 0"></path>
+                    <path class="a2" d="M0 20 L30 52 L60 20"></path>
+                    <path class="a3" d="M0 40 L30 72 L60 40"></path>
+                </svg>
+            </button>
+        </div>
+
+        <main id="main">
+            <nav class="navbar" id="navbar">
+                <button class="navbarlogo-container" onclick="scrollToTop()">
+                    <img id="nav-logo" src="/Images/Travel Enthusiasts 2 PEQUENO.png" alt="TravelEnthusiasts">
+                </button>
+                <div class="menudropdown-container">
+                    <div class="menu-links" id="menu-links">
+                        <div class="dropdown">
+                            <button class="dropbtn">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20" width="17.5" viewBox="0 0 448 512">
+                                    <path fill="#ffffff" d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
+                                </svg>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="index.html">Home</a>
+                                <a href="Destinos.html">Destinations</a>
+                                <a href="Recommended Websites.html">Recommended Websites</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            
+            <!-- Popular Destinations -->
+            <div class="Popular-Destinations">
+                <h1 class="h1-pd">Popular Destinations</h1>
+                
+                <div class="destinos_populares-container">
+                    <div class="paris-container">
+                        <div class="wallpaper-paris">
+                            <img class="paris-img" src="/Images/Destinos/Paris Wallpaper.jpg" alt="Paris">
+                        </div>
+                        <div class="descricao-paris">
+                            <h2>Paris</h2>
+                            <p>The city of love, romantic charm and cultural richness</p>
+                            <button>See more</button>
+                        </div>
+                    </div>
+                    
+                    <div class="london-container">
+                        <div class="wallpaper-london">
+                            <img class="london-img" src="/Images/Destinos/London Wallpaper.jpg" alt="London">
+                        </div>
+                        <div class="descricao-london">
+                            <h2>London</h2>
+                            <p>Royal palaces, contemporary innovations and cultural corners</p> 
+                            <button>See more</button>
+                        </div>
+                    </div>
+
+                    <div class="milan-container">
+                        <div class="wallpaper-milan">
+                            <img class="milan-img" src="/Images/Destinos/Milan Wallapaper.jpg" alt="Milano">
+                        </div>
+                        <div class="descricao-milan">
+                            <h2>Milano</h2>
+                            <p>From stunning renaissance works of art to the latest fashion trends</p> 
+                            <button>See more</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="see_all-btns">
+                    <button class="see-all-pd_btn">See all</button>
+                </div>
+            </div> <!-- FIM Popular Destinations -->
+            
+
+            <!-- Travel Enthusiasts Recommends -->
+            <div class="Travel-Enthusiasts-Recomends">
+                <h1 class="h1-te_recommends"> Travel Enthusiasts Recommends</h1>
+
+                <div class="te_recommends-container">
+                    <div class="porto-container">
+                        <div class="wallpaper-porto">
+                            <img class="porto-img" src="/Images/Destinos/Porto wallpaper 1.jpg" alt="Porto">
+                        </div>
+                        <div class="descricao-porto">
+                        <h2>Porto</h2>
+                        <p>Architecture, vibrant culture and authentic cuisine</p>
+                        <button>See more</button>     
+                        </div>
+                    </div>
+
+                    <div class="newyork-container">
+                        <div class="wallpaper-newyork">
+                            <img class="newyork-img" src="/Images/Destinos/New York wallpaper.jpg" alt="New York">
+                        </div>
+                        <div class="descricao-newyork">
+                        <h2>New York</h2>
+                        <p>Unique metropolis, diverse culture and iconic attractions</p>
+                        <button>See more</button>     
+                        </div>
+                    </div>
+
+                    <div class="dubai-container">
+                        <div class="wallpaper-dubai">
+                            <img class="dubai-img" src="/Images/Destinos/Duabi wallpaper.jpg" alt="Dubai">
+                        </div>
+                        <div class="descricao-dubai">
+                        <h2>Dubai</h2>
+                        <p>Future and tradition, luxury and culture in perfect harmony</p>
+                        <button>See more</button>     
+                        </div>
+                    </div>
+                </div>
+                <div class="see_all-btns">
+                    <button class="see-all-te_r_btn">See all</button>
+                </div>
+            </div> <!-- FIM TE Recommends --> 
+
+            <div class="about-TE">
+                <h6 class="date-TE">ESTABLISHED IN 2023</h6>
+                <h1 class="about-title">About Travel Enthusiasts</h1>
+                <div class="resumo-TE">
+                    <p>We are a community dedicated to all travel lovers. <br>
+                        At Travel Enthusiasts, our mission is to inspire, inform and <br>
+                        connect travelers from all over the world. <br>
+                        Explore exotic destinations, get expert tips, share exciting stories <br>
+                        and join a global network of travel enthusiasts. <br>
+                        Join us and start your journey to discover the world with passion. <br>
+                        Your next dream destination is just a click away!
+                    </p>
+                </div>
+                <div class="assinatura-DS">
+                    <img src="/Images/Assinatura.png" alt="assinatura">
+                </div>
+                <h6 class="DS-CEO">Diogo Silva - CEO Travel Enthusiasts</h6>
+            </div>
+            
+            <button class="up-arrow-btn" onclick="scrollToTop()">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" width="18" viewBox="0 0 384 512">
+                  <path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160" fill="#384469"/>
+                </svg>
+            </button>
+                
+            <footer class="footer-TE">
+                <div class="footer-conteudo">
+                    <div class="footer-socials">
+                        <div class="footerlogo-container">
+                            <img src="/Images/Travel Enthusiasts 1.png" alt="Logo TE 1">
+                        </div>
+                        <div class="socials-container">
+                            <a href="https://www.instagram.com/"> <!-- Alterar links -->
+                                <img class="insta" src="/Images/icons/instagram.png" alt="Instagram">
+                            </a>
+                            <a href="https://twitter.com/home"> <!-- Alterar links -->
+                                <img class="twitter" src="/Images/icons/twitter.png" alt="Twitter">
+                            </a>
+                            <a href="https://www.facebook.com/"> <!-- Alterar links -->
+                                <img class="facebook" src="/Images/icons/facebook.png" alt="Facebook">
+                            </a>    
+                        </div>
+                        <h6 class="rights-reservedTXT">© 2023 Travel Enthusiasts. All rights reserved.</h6>
+                    </div>
+
+                    <div class="vertical-line1"></div>
+                    
+                    <h6 class="newsletter-txt">Newsletter</h6>
+                    <div class="newsletter-container">
+                        <form action="URL_DO_SEU_FORMULARIO_MAILCHIMP" method="post"> <!-- usar Mailchimp -->
+                            <input type="emailInput" id="newsletterInputTxt" name="email" placeholder="Enter your email" required>
+                            <button type="subBtn">Subscribe</button>
+                        </form>
+                    </div>
+
+                    <div class="vertical-line2"></div>
+
+                    <div class="contacts-container">
+                        <a> <!-- adicionar links paginas -->
+                            <h6 class="containerTxt-1">Contact us</h6>
+                        </a>
+                        <a>
+                            <h6 class="containerTxt-2">Terms of Service</h6>
+                        </a>
+                        <a>
+                            <h6 class="containerTxt-3">Privacy Policy</h6>
+                        </a>
+                    </div>
+
+                </div>
+            </footer>
+
+        </main>
+        
+        <script src="/Home page/scripts.js"> </script>
+    </body>
+
+</html> 

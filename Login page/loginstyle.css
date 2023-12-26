@@ -1,0 +1,189 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #9a8f78;
+}
+
+/* background */
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}  
+
+/* Formulario */
+.form-container {
+  width: 480px;
+  height: 680px;
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.863) 0px 5px 15px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 20px 30px;
+  align-items: center;
+}
+
+/*Home back-btn */
+.back-btn {
+  margin-left: -15px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/*TE Titulo*/
+.TE-title {
+  font-family: serif;
+  font-style: italic;
+  font-size: 47px;
+  font-weight: 600;
+  color: #384469;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+/* Email e Password */
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.input {
+  font-family: 'Spectral', serif;
+  font-style: italic;
+  font-size: 20px;
+  border-radius: 5px;
+  border: 1px solid #384469;
+  outline: 0;
+  box-sizing: border-box;
+  padding: 12px 15px;
+}
+
+/* Forgot password? */
+.passforg-container {
+  margin: 0;
+  text-align: right;
+  margin-top: -10px;
+  color: #747474;
+  text-decoration: underline;
+  text-decoration-color: #747474;
+}
+
+.passforg-container-label {
+  font-family: serif;
+  font-style: italic;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.passforg-container:hover {
+color: #000;
+}
+
+/*Login Btn*/
+.login-btn {
+  padding: 10px 15px;
+  font-family: 'Spectral', serif;
+  font-style: italic;
+  font-size: 22px;
+  border-radius: 10px;
+  border: 0;
+  outline: 0;
+  background: #384469;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+.login-btn:hover {
+  background-color: #272f49;
+}
+
+/* Signup */
+.sign-up-label {
+  margin: 0;
+  font-family: 'Spectral', serif;
+  font-style: italic;
+  font-size: 17px;
+  color: #000000;
+}
+
+.sign-up-link {
+  margin-left: 1px;
+  font-family: 'Spectral', serif;
+  font-weight: 600;
+  font-size: 17px;
+  color: #354165ae;
+  text-decoration: underline;
+  text-decoration-color: #354165ae;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.sign-up-link:hover {
+  color: #191d2d;
+  text-decoration-color: #191d2d;
+}
+
+/* Apple & Google btns */
+.buttons-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 20px;
+  gap: 15px;
+}
+
+.apple-login-btn, .google-login-btn {
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 15px 15px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Spectral', serif;
+  font-style: italic;
+  font-size: 18px;
+  gap: 5px;
+}
+
+.apple-login-btn {
+  background-color: #000;
+  color: #ffffff;
+  border: none;
+}
+
+.google-login-btn {
+  border: 2px solid #475a99;
+  transition: background-color 0.5s ease;
+  color: #3a4a7d;
+}
+
+.google-login-btn:hover {
+  background-color: #efefef;
+}
+
+/* tamaho icons */
+.apple-icon, .google-icon {
+  font-size: 30px;
+  margin-bottom: 1px;
+}   
