@@ -25,7 +25,7 @@ body::-webkit-scrollbar-thumb:hover {
   background-color: #272f49;
 }
 
-/* landing page e barra de pesquisa */
+/* landing page */
 .landing-container {
   position: relative;
   min-height: 100vh;
@@ -107,6 +107,7 @@ body::-webkit-scrollbar-thumb:hover {
   left: 0px;
 }
 
+/* Login e Signup btns */
 .loginBtn {
   cursor: pointer;
   width: 60px;
@@ -147,7 +148,7 @@ body::-webkit-scrollbar-thumb:hover {
   background-color: rgb(255, 255, 255);
 }
 
-.h1-landing {
+.h1-landing { /* titulo landingpage */
     color: rgb(255,255,255);
     text-align: center;
     font-weight: 540;
@@ -159,6 +160,7 @@ body::-webkit-scrollbar-thumb:hover {
     position: relative;
 }
 
+/* Search bar */
 .barra-de-pesquisa {
   margin: 0 auto;
   width: 800px;
@@ -222,6 +224,7 @@ body::-webkit-scrollbar-thumb:hover {
   rotate: -45deg;
 }
 
+/* Setas animacao scroll */
 .arrows {
   width: 60px;
   height: 72px;
@@ -273,6 +276,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 
 /* Tudo relativo a navbar apos landing page */
+/* navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -294,7 +298,6 @@ body::-webkit-scrollbar-thumb:hover {
   width: 113px;
   height: auto;
 }
-
 
 /*Menu dropdown*/
 .menudropdown-container {
@@ -345,7 +348,6 @@ body::-webkit-scrollbar-thumb:hover {
 .dropdown-content a:hover {
   background-color: #0000001c;
 }
-
 
 
 /* Conteudo do resto da pagina */
@@ -400,7 +402,7 @@ main {
 .descricao-paris {
   position: relative;
   width: 100%;
-  background-color: rgb(255, 255, 255);
+  background-color: #ffffff;
   color: #fff;
   padding: 20px;
   box-sizing: border-box;
