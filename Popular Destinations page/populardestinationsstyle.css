@@ -346,6 +346,10 @@ body::-webkit-scrollbar-thumb:hover {
   margin-top: 0;
 }
 
+.footer-TE a {
+  text-decoration: none;
+}
+
 .footer-conteudo {
   position: relative;
 }

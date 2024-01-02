@@ -945,9 +945,13 @@ main {
   align-items: center;
 }
 
+.footer-TE a {
+  text-decoration: none;
+}
+
 .footer-conteudo {
   position: relative;
-}
+} 
 
 /* Logo and Socials */
 .footerlogo-container {
@@ -1079,6 +1083,7 @@ button[type="subBtn"]:hover {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.616);
   margin-left: 1650px;
   margin-top: -150px;
+  text-decoration: none;
 }
 
 .containerTxt-2 {
@@ -1089,6 +1094,7 @@ button[type="subBtn"]:hover {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.616);
   margin-left: 1620px;
   margin-top: -30px;
+  text-decoration: none;
 }
 
 .containerTxt-3 {
@@ -1100,4 +1106,5 @@ button[type="subBtn"]:hover {
   margin-left: 1630px;
   margin-top: -30px;
   margin-bottom: 10px;
+  text-decoration: none;
 }

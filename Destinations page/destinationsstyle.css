@@ -548,6 +548,10 @@ align-items: center;
 margin-top: 0;
 }
 
+.footer-TE a {
+text-decoration: none;
+}
+
 .footer-conteudo {
 position: relative;
 }
@@ -704,3 +708,4 @@ margin-left: 1630px;
 margin-top: -30px;
 margin-bottom: 10px;
 }
+
