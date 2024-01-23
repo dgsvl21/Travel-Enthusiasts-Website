@@ -174,7 +174,7 @@ body::-webkit-scrollbar-thumb:hover {
   position: relative;
 }
 
-.barra-de-pesquisa input[type="textBox"] {
+.barra-de-pesquisa input[type="text"] {
   width: 560px;
   padding: 13px;
   border: none;
@@ -185,7 +185,7 @@ body::-webkit-scrollbar-thumb:hover {
   outline: 0;
 }
 
-.barra-de-pesquisa input[type="textBox"]::placeholder {
+.barra-de-pesquisa input[type="text"]::placeholder {
   text-align: right;
   margin-left: 180px;
   margin-right: 90px;
@@ -197,7 +197,7 @@ body::-webkit-scrollbar-thumb:hover {
   font-style:italic;
 }
 
-.barra-de-pesquisa button[type="searchBTN"] {
+.barra-de-pesquisa button[type="submit"] {
   width: 150px;
   padding: 13px;
   border: none;
@@ -212,7 +212,7 @@ body::-webkit-scrollbar-thumb:hover {
   right: 0;
 }
 
-.barra-de-pesquisa button[type="searchBTN"]:hover {
+.barra-de-pesquisa button[type="submit"]:hover {
   background-color: #272f49;
 }
 

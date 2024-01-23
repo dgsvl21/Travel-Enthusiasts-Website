@@ -1,6 +1,7 @@
 body, html {
 margin: 0;
 padding: 0;
+background-color: #ECE9DB;
 font-family: 'Spectral', serif;
 height: 100%;
 position: relative;
@@ -26,6 +27,7 @@ background-color: #272f49;
 }
 
 /* Landing page */
+
 .landing-container {
 position: relative;
 min-height: 100vh;
@@ -36,6 +38,7 @@ justify-content: center;
 overflow: hidden;
 }
 
+
 .landing-image {
 position: absolute;
 top: 0;
@@ -45,7 +48,20 @@ height: 100%;
 background-image: url('/Images/Destinos/Porto\ wallpaper\ dark.png');
 background-position: center;
 background-size: cover;
+z-index: 0;
+} 
+
+.landing-layer1 {
+position: absolute;
+top: -17px;
+left: 0;
+width: 100%;
+height: 100%;
+background-image: url('destinos_Porto.png');
+background-size: cover;
+opacity: 1;
 }
+
 
 /* Setas animacao scroll */
 .arrows {
@@ -177,4 +193,88 @@ background-color: #0000001c;
 
 /* Conteudo do resto da pagina */
 
-/*  */
+/* BTNS */
+.btns-container {
+display: flex;
+justify-content: center;
+gap: 50px;
+margin-top: 25px;
+}
+
+.btns-container button {
+font-family:'Spectral', serif;
+font-style: italic;
+font-weight: 500;
+font-size: 19px;
+background-color: #ffffff;
+color: #D5D1BD;
+padding: 8px 8px 8px;
+border: 1px solid #c1beab;
+border-radius: 5px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+cursor: pointer;
+transition: background-color 0.7s ease;
+}
+
+.btns-container button:hover {
+background-color: #D5D1BD;
+color: #ffffff;
+}
+
+/* linhas verticais */
+hr {
+width: 70%;
+border-top: 1px solid #ffffff;
+margin-top: 20px;
+}
+
+/* WHY PORTO? title */
+.porto-title {
+font-family:'Spectral', serif;
+font-style: italic;
+font-size: 20px;
+color: #384469;
+display: flex;
+justify-content: center;
+margin-top: 50px;
+}
+
+.porto-description {
+font-family:'Spectral', serif;
+font-style: normal;
+font-size: 30px;
+color: #384469;
+display: flex;
+justify-content: center;
+text-align: center;
+}
+
+/* Wallpaper 2 */
+.porto_wallpaper-container {
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 70px;
+margin-bottom: 70px;
+}
+
+.porto-wallpaper2 {
+width: 1338px;
+height: 725px;
+} 
+
+/* Points of interest */
+.PoI-container {
+
+}
+
+.PoI-title {
+font-family:'Spectral', serif;
+font-style: italic;
+font-weight: 600;
+font-size: 30px;
+color: #384469;
+margin-top: 50px;
+margin-left: 150px;
+}
+

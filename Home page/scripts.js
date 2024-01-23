@@ -9,13 +9,14 @@ function scrollToMain() {
 
 //search bar destinations
 const destinations = {
-  //adicionar destinos
-  //porto: 'porto.html'
+  porto: '/Porto Page/portopage.html'
 };
 
 //working search bar
-function searchDestination() {
-  var destination = document.getElementById("searchInput").value.toLowerCase();
+function searchDestination(event) {
+  event.preventDefault();
+  
+  var destination = document.getElementById("searchInput").value.toLowerCase().trim();
   console.log("Destination:", destination);
 
   if (destinations.hasOwnProperty(destination)) {
