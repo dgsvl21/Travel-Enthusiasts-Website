@@ -195,28 +195,29 @@ background-color: #0000001c;
 
 /* BTNS */
 .btns-container {
-display: flex;
+display:flex;
 justify-content: center;
-gap: 50px;
+gap: 40px;
+align-items: center;
 margin-top: 25px;
 }
 
-.btns-container button {
+.btns {
 font-family:'Spectral', serif;
 font-style: italic;
-font-weight: 500;
+font-weight: 600;
 font-size: 19px;
 background-color: #ffffff;
-color: #D5D1BD;
+color: #b9ac92;
 padding: 8px 8px 8px;
 border: 1px solid #c1beab;
 border-radius: 5px;
-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.2);
 cursor: pointer;
-transition: background-color 0.7s ease;
+transition: background-color 0.5s ease;
 }
 
-.btns-container button:hover {
+.btns:hover {
 background-color: #D5D1BD;
 color: #ffffff;
 }
@@ -265,16 +266,62 @@ height: 725px;
 
 /* Points of interest */
 .PoI-container {
-
+display: flex;
+justify-content: center;
+align-items:flex-start;
 }
 
-.PoI-title {
+.PoI-title { /*Titulo*/
 font-family:'Spectral', serif;
 font-style: italic;
 font-weight: 600;
 font-size: 30px;
 color: #384469;
 margin-top: 50px;
-margin-left: 150px;
+align-items: center;
+justify-content: center;
+display: flex;
 }
+
+.PoI_slider-container { /*contentor SLIDER*/
+position: relative;
+display: flex;
+left: 75px;
+overflow: hidden;
+max-width: 1000px;
+max-height: 600px;
+}
+
+.slider { /*slider*/
+display: flex;
+transition: transform 0.5s ease-in-out;
+}
+
+.slider img { /*imagem*/
+width: 100%;
+height: auto;
+}
+
+.prevBtn { /*btn previous*/
+position: relative;
+background-color: #3498db;
+color: #ffffff;
+border: none;
+padding: 10px;
+cursor: pointer;
+left: -1050px;
+margin-top: 285px;
+}
+
+.nextBtn { /*btn next*/
+position: relative;
+background-color: #3498db;
+color: #fff;
+border: none;
+padding: 10px;
+cursor: pointer;
+right: -64px;
+margin-top: 285px;
+}
+
 

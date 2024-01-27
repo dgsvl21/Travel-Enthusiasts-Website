@@ -432,9 +432,9 @@ main {
   font-weight: bold;
   font-size: 16px;
   background-color: #ffffff;
-  color: #D5D1BD;
+  color: #b9ac92;
   padding: 10px 20px;
-  border: 1px solid #D5D1BD;
+  border: 1px solid #b9ac92;
   border-radius: 2px;
   margin-top: 24px;
   margin-left: -10px;
@@ -500,9 +500,9 @@ main {
   font-weight: bold;
   font-size: 16px;
   background-color: #ffffff;
-  color: #D5D1BD;
+  color: #b9ac92;
   padding: 10px 20px;
-  border: 1px solid #D5D1BD;
+  border: 1px solid #b9ac92;
   border-radius: 2px;
   margin-left: -10px;
   cursor: pointer;
@@ -567,9 +567,9 @@ main {
   font-weight: bold;
   font-size: 16px;
   background-color: #ffffff;
-  color: #D5D1BD;
+  color: #b9ac92;
   padding: 10px 20px;
-  border: 1px solid #D5D1BD;
+  border: 1px solid #b9ac92;
   border-radius: 2px;
   margin-left: -10px;
   cursor: pointer;
@@ -674,9 +674,9 @@ main {
   font-weight: bold;
   font-size: 16px;
   background-color: #ffffff;
-  color: #D5D1BD;
+  color: #b9ac92;
   padding: 10px 20px;
-  border: 1px solid #D5D1BD;
+  border: 1px solid #b9ac92;
   border-radius: 2px;
   margin-top: 24px;
   margin-left: -10px;
@@ -743,9 +743,9 @@ main {
   font-weight: bold;
   font-size: 16px;
   background-color: #ffffff;
-  color: #D5D1BD;
+  color: #b9ac92;
   padding: 10px 20px;
-  border: 1px solid #D5D1BD;
+  border: 1px solid #b9ac92;
   border-radius: 2px;
   margin-top: 24px;
   margin-left: -10px;
@@ -812,9 +812,9 @@ main {
   font-weight: bold;
   font-size: 16px;
   background-color: #ffffff;
-  color: #D5D1BD;
+  color: #b9ac92;
   padding: 10px 20px;
-  border: 1px solid #D5D1BD;
+  border: 1px solid #b9ac92;
   border-radius: 2px;
   margin-top: 24px;
   margin-left: -10px;
@@ -882,7 +882,7 @@ main {
 
 .resumo-TE {
   background-color: #E6E3D2;
-  border: 4px solid #D5D1BD;
+  border: 3px solid #D5D1BD;
   padding: 10px;
   margin-top: -25px;
   margin-left: 500px;
