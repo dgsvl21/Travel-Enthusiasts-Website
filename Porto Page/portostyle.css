@@ -197,7 +197,7 @@ background-color: #0000001c;
 .btns-container {
 display:flex;
 justify-content: center;
-gap: 40px;
+gap: 50px;
 align-items: center;
 margin-top: 25px;
 }
@@ -275,7 +275,7 @@ align-items:flex-start;
 font-family:'Spectral', serif;
 font-style: italic;
 font-weight: 600;
-font-size: 30px;
+font-size: 40px;
 color: #384469;
 margin-top: 50px;
 align-items: center;
@@ -286,42 +286,93 @@ display: flex;
 .PoI_slider-container { /*contentor SLIDER*/
 position: relative;
 display: flex;
-left: 75px;
+left: 92px;
 overflow: hidden;
 max-width: 1000px;
 max-height: 600px;
+margin-top: -25px;
 }
 
-.slider { /*slider*/
+.slider {
 display: flex;
 transition: transform 0.5s ease-in-out;
 }
 
-.slider img { /*imagem*/
+.slide {
+flex: 0 0 100%;
+position: relative;
+}
+
+.slide img {
 width: 100%;
-height: auto;
+height: 100%;
+}
+
+.slide-content {
+position: absolute;
+bottom: 0;
+background: hsla(0, 0%, 0%, 0.700);
+width: 100%;
+padding: 10px;
+color: #ffffff;
+}
+
+.slide h1 {
+font-family: 'Spectral', serif;
+font-style: italic;
+margin: 0;
+margin-left: 10px;
+}
+
+.slide p {
+font-family: 'Spectral', serif;
+font-size: 20px;
+margin: 0;
+margin-left: 10px;
 }
 
 .prevBtn { /*btn previous*/
 position: relative;
-background-color: #3498db;
-color: #ffffff;
-border: none;
-padding: 10px;
+font-family: 'Spectral', serif;
+font-style: italic;
+font-size: 19px;
+font-weight: 600;
+padding: 8px 15px 8px;
+background-color: #ffffff;
+color: #b9ac92;
+border: 1px solid #c1beab;
+border-radius: 5px;
 cursor: pointer;
 left: -1050px;
 margin-top: 285px;
+transition: background-color 0.5s ease;
+}
+
+.prevBtn:hover {
+background-color: #D5D1BD;
+color: #ffffff;
 }
 
 .nextBtn { /*btn next*/
 position: relative;
-background-color: #3498db;
-color: #fff;
-border: none;
-padding: 10px;
+font-family: 'Spectral', serif;
+font-style: italic;
+font-size: 19px;
+font-weight: 600;
+padding: 8px 15px 8px;
+background-color: #ffffff;
+color: #b9ac92;
+border: 1px solid #c1beab;
+border-radius: 5px;
 cursor: pointer;
 right: -64px;
 margin-top: 285px;
+transition: background-color 0.5s ease;
+}
+
+.nextBtn:hover {
+background-color: #D5D1BD;
+color: #ffffff;
 }
 
 

@@ -34,30 +34,31 @@ PoIbtn.addEventListener('click', function() {
 
 //PoI Image Slider
 const slider = document.querySelector('.slider');
+const slides = document.querySelectorAll('.slider img');
+
 const prevBtn = document.getElementById('prevBtn');
 const nextBtn = document.getElementById('nextBtn');
 
 let currentIndex = 0;
 
+function showSlide(index) {
+    const translateValue = -index * 100;
+    slider.style.transform = `translateX(${translateValue}%)`;
+}
+
 function changeSlide(direction) {
-    if (slider.children.length > 0) {
     currentIndex += direction;
 
     if (currentIndex < 0) {
-        currentIndex = slider.children.length - 1;
-    } else if (currentIndex >= slider.children.length) {
+        currentIndex = slides.length - 1;
+    } else if (currentIndex >= slides.length) {
         currentIndex = 0;
     }
 
-    const translateValue = -currentIndex * 100;
-    slider.style.transform = `translateX(${translateValue}%)`;
-    }
+    showSlide(currentIndex);
 }
 
 prevBtn.addEventListener('click', () => changeSlide(-1));
 nextBtn.addEventListener('click', () => changeSlide(1));
-
-
-  
   
   
