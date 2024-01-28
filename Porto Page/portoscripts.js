@@ -15,6 +15,7 @@ window.scrollTo({
 })
 }
 
+
 //PoI btn scroll
 const PoIbtn = document.getElementById('PoIbtn');
 
@@ -31,34 +32,96 @@ PoIbtn.addEventListener('click', function() {
   }
 });
 
-
 //PoI Image Slider
-const slider = document.querySelector('.slider');
-const slides = document.querySelectorAll('.slider img');
+const sliderPoI = document.querySelector('.sliderPoI');
+const slidesPoI = document.querySelectorAll('.sliderPoI img');
 
-const prevBtn = document.getElementById('prevBtn');
-const nextBtn = document.getElementById('nextBtn');
+const prevBtnPoI = document.getElementById('prevBtnPoI');
+const nextBtnPoI = document.getElementById('nextBtnPoI');
 
-let currentIndex = 0;
+let currentIndexPoI = 0;
+
+function showSlidePoI(index) {
+    const translateValue = -index * 100;
+    sliderPoI.style.transform = `translateX(${translateValue}%)`;
+}
+
+function changeSlidePoI(direction) {
+    currentIndexPoI += direction;
+
+    if (currentIndexPoI < 0) {
+        currentIndexPoI = slidesPoI.length - 1;
+    } else if (currentIndexPoI >= slidesPoI.length) {
+        currentIndexPoI = 0;
+    }
+
+    showSlidePoI(currentIndexPoI);
+}
+
+prevBtnPoI.addEventListener('click', () => changeSlidePoI(-1));
+nextBtnPoI.addEventListener('click', () => changeSlidePoI(1));
+  
+
+
+//WtV btn scroll
+const WtVbtn = document.getElementById('WtVbtn');
+
+WtVbtn.addEventListener('click', function() {
+  const PoITitleElement = document.querySelector('.WtV-title');
+
+  if (PoITitleElement) {
+    const offsetTop = PoITitleElement.offsetTop;
+
+    window.scrollTo({
+      top: offsetTop,
+      behavior: 'smooth'
+    });
+  }
+});
+
+//WtV Image Slider
+
+const sliderWtV = document.querySelector('.sliderWtV');
+const slidesWtV = document.querySelectorAll('.sliderWtV img');
+
+const prevBtnWtV = document.getElementById('prevBtnWtV');
+const nextBtnWtV = document.getElementById('nextBtnWtV');
+
+let currentIndexWtV = 0;
 
 function showSlide(index) {
     const translateValue = -index * 100;
-    slider.style.transform = `translateX(${translateValue}%)`;
+    sliderWtV.style.transform = `translateX(${translateValue}%)`;
 }
 
 function changeSlide(direction) {
-    currentIndex += direction;
+    currentIndexWtV += direction;
 
-    if (currentIndex < 0) {
-        currentIndex = slides.length - 1;
-    } else if (currentIndex >= slides.length) {
-        currentIndex = 0;
+    if (currentIndexWtV < 0) {
+        currentIndexWtV = slidesWtV.length - 1;
+    } else if (currentIndexWtV >= slidesWtV.length) {
+        currentIndexWtV = 0;
     }
 
-    showSlide(currentIndex);
+    showSlide(currentIndexWtV);
 }
 
-prevBtn.addEventListener('click', () => changeSlide(-1));
-nextBtn.addEventListener('click', () => changeSlide(1));
-  
-  
+prevBtnWtV.addEventListener('click', () => changeSlide(-1));
+nextBtnWtV.addEventListener('click', () => changeSlide(1)); 
+
+
+//WtE btn scroll
+const WtEbtn = document.getElementById('WtEbtn');
+
+WtEbtn.addEventListener('click', function() {
+  const PoITitleElement = document.querySelector('.WtE-title');
+
+  if (PoITitleElement) {
+    const offsetTop = PoITitleElement.offsetTop;
+
+    window.scrollTo({
+      top: offsetTop,
+      behavior: 'smooth'
+    });
+  }
+});

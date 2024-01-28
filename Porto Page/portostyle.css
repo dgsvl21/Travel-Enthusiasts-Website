@@ -227,6 +227,7 @@ hr {
 width: 70%;
 border-top: 1px solid #ffffff;
 margin-top: 20px;
+box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.400);
 }
 
 /* WHY PORTO? title */
@@ -264,14 +265,9 @@ width: 1338px;
 height: 725px;
 } 
 
-/* Points of interest */
-.PoI-container {
-display: flex;
-justify-content: center;
-align-items:flex-start;
-}
 
-.PoI-title { /*Titulo*/
+/* Points of interest */
+.PoI-title { 
 font-family:'Spectral', serif;
 font-style: italic;
 font-weight: 600;
@@ -283,6 +279,12 @@ justify-content: center;
 display: flex;
 }
 
+.PoI-container {
+display: flex;
+justify-content: center;
+align-items:flex-start;
+}
+
 .PoI_slider-container { /*contentor SLIDER*/
 position: relative;
 display: flex;
@@ -291,24 +293,25 @@ overflow: hidden;
 max-width: 1000px;
 max-height: 600px;
 margin-top: -25px;
+margin-bottom: 70px;
 }
 
-.slider {
+.sliderPoI {
 display: flex;
 transition: transform 0.5s ease-in-out;
 }
 
-.slide {
+.slidePoI {
 flex: 0 0 100%;
 position: relative;
 }
 
-.slide img {
+.slidePoI img {
 width: 100%;
 height: 100%;
 }
 
-.slide-content {
+.slide-contentPoI {
 position: absolute;
 bottom: 0;
 background: hsla(0, 0%, 0%, 0.700);
@@ -317,21 +320,21 @@ padding: 10px;
 color: #ffffff;
 }
 
-.slide h1 {
+.slidePoI h1 {
 font-family: 'Spectral', serif;
 font-style: italic;
 margin: 0;
 margin-left: 10px;
 }
 
-.slide p {
+.slidePoI p {
 font-family: 'Spectral', serif;
 font-size: 20px;
 margin: 0;
 margin-left: 10px;
 }
 
-.prevBtn { /*btn previous*/
+.prevBtnPoI { /*btn previous*/
 position: relative;
 font-family: 'Spectral', serif;
 font-style: italic;
@@ -348,12 +351,12 @@ margin-top: 285px;
 transition: background-color 0.5s ease;
 }
 
-.prevBtn:hover {
+.prevBtnPoI:hover {
 background-color: #D5D1BD;
 color: #ffffff;
 }
 
-.nextBtn { /*btn next*/
+.nextBtnPoI { /*btn next*/
 position: relative;
 font-family: 'Spectral', serif;
 font-style: italic;
@@ -365,14 +368,239 @@ color: #b9ac92;
 border: 1px solid #c1beab;
 border-radius: 5px;
 cursor: pointer;
-right: -64px;
+right: -18px;
 margin-top: 285px;
 transition: background-color 0.5s ease;
 }
 
-.nextBtn:hover {
+.nextBtnPoI:hover {
 background-color: #D5D1BD;
 color: #ffffff;
 }
 
+
+
+/* What to visit */
+.WtV-title { 
+font-family:'Spectral', serif;
+font-style: italic;
+font-weight: 600;
+font-size: 40px;
+color: #384469;
+margin-top: 50px;
+align-items: center;
+justify-content: center;
+display: flex;
+}
+
+.WtV-container {
+display: flex;
+justify-content: center;
+align-items:flex-start;
+}
+
+.WtV_slider-container { /*contentor SLIDER*/
+position: relative;
+display: flex;
+left: 92px;
+overflow: hidden;
+max-width: 1000px;
+max-height: 600px;
+margin-top: -25px;
+margin-bottom: 70px;
+}
+
+.sliderWtV {
+display: flex;
+transition: transform 0.5s ease-in-out;
+}
+
+.slideWtV {
+flex: 0 0 100%;
+position: relative;
+}
+
+.slideWtV img {
+width: 100%;
+height: 100%;
+}
+
+.slide-contentWtV {
+position: absolute;
+bottom: 0;
+background: hsla(0, 0%, 0%, 0.700);
+width: 100%;
+padding: 10px;
+color: #ffffff;
+}
+
+.slideWtV h1 {
+font-family: 'Spectral', serif;
+font-style: italic;
+margin: 0;
+margin-left: 10px;
+}
+
+.slideWtV p {
+font-family: 'Spectral', serif;
+font-size: 20px;
+margin: 0;
+margin-left: 10px;
+}
+
+.prevBtnWtV { /*btn previous*/
+position: relative;
+font-family: 'Spectral', serif;
+font-style: italic;
+font-size: 19px;
+font-weight: 600;
+padding: 8px 15px 8px;
+background-color: #ffffff;
+color: #b9ac92;
+border: 1px solid #c1beab;
+border-radius: 5px;
+cursor: pointer;
+left: -1050px;
+margin-top: 285px;
+transition: background-color 0.5s ease;
+}
+
+.prevBtnWtV:hover {
+background-color: #D5D1BD;
+color: #ffffff;
+}
+
+.nextBtnWtV { /*btn next*/
+position: relative;
+font-family: 'Spectral', serif;
+font-style: italic;
+font-size: 19px;
+font-weight: 600;
+padding: 8px 15px 8px;
+background-color: #ffffff;
+color: #b9ac92;
+border: 1px solid #c1beab;
+border-radius: 5px;
+cursor: pointer;
+right: -18px;
+margin-top: 285px;
+transition: background-color 0.5s ease;
+}
+
+.nextBtnWtV:hover {
+background-color: #D5D1BD;
+color: #ffffff;
+}
+
+
+
+/* Where to Eat */
+.WtE-title {
+font-family:'Spectral', serif;
+font-style: italic;
+font-weight: 600;
+font-size: 40px;
+color: #384469;
+margin-top: 50px;
+align-items: center;
+justify-content: center;
+display: flex;
+}
+
+.WtE-container {
+justify-content: space-between;
+}
+
+.trigocantos-container {
+border: 2px solid #9A8F78;
+border-radius: 8px;
+max-width: 500px;
+max-height: 800px;
+margin-left: 100px;
+padding: 15px;
+}
+
+.trigocantos-container img {
+width: 100%;
+border-radius: 8px 8px 0 0;
+}
+
+.trigocantos-container h1 {
+font-family:'Spectral', serif;
+font-style: italic;
+font-weight: 600;
+font-size: 30px;
+color: #384469;
+margin: 10px 0;
+text-align: center;
+}
+
+.trigocantos-rating {
+margin-bottom: 10px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.tripadvisor-btn {
+cursor: pointer;
+background-color: transparent;
+border: none;
+margin-top: -10px;
+}
+
+.tripadvidor-icon {
+height: 50px;
+width: auto;
+}
+
+.trigocantos-container p {
+font-family:'Spectral', serif;
+font-weight: 500;
+font-size: 25px;
+color: #384469;
+margin: 10px 0;
+text-align: center;
+}
+
+.map-icon {
+width: auto !important;
+height: 24px;
+margin-right: 5px;
+margin-bottom: -3px;
+}
+
+.phone-icon {
+width: auto !important;
+height: 24px;
+margin-right: 5px;
+margin-bottom: -3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* BTN scroll up */
+.up-arrow-btn {
+width: 40px;
+height: 40px;
+margin-left: 1850px;
+margin-top: 200px;
+color: #384469;
+background-color: transparent;
+border: none;
+padding: 0; 
+cursor: pointer;
+}
 
