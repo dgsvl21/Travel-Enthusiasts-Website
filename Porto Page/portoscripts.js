@@ -80,7 +80,6 @@ WtVbtn.addEventListener('click', function() {
 });
 
 //WtV Image Slider
-
 const sliderWtV = document.querySelector('.sliderWtV');
 const slidesWtV = document.querySelectorAll('.sliderWtV img');
 
@@ -115,6 +114,23 @@ const WtEbtn = document.getElementById('WtEbtn');
 
 WtEbtn.addEventListener('click', function() {
   const PoITitleElement = document.querySelector('.WtE-title');
+
+  if (PoITitleElement) {
+    const offsetTop = PoITitleElement.offsetTop;
+
+    window.scrollTo({
+      top: offsetTop,
+      behavior: 'smooth'
+    });
+  }
+});
+
+
+//WtP btn scroll
+const WtSbtn = document.getElementById('WtSbtn');
+
+WtSbtn.addEventListener('click', function() {
+  const PoITitleElement = document.querySelector('.WtS-title');
 
   if (PoITitleElement) {
     const offsetTop = PoITitleElement.offsetTop;
