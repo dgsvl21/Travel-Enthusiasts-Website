@@ -150,11 +150,6 @@ display: flex;
 align-items: center;
 }
 
-.dropdown {
-position: relative;
-display: inline-block;
-}
-
 .dropbtn {
 background-color: transparent;
 border: none;
@@ -163,11 +158,20 @@ padding: 10px;
 transition: background-color 0.3s ease;
 }
 
+.dropdown {
+position: relative;
+display: inline-block;
+}
+
 .dropdown-content {
 display: none;
 position: absolute;
 background-color: #ffffff;
 box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.275);
+}
+
+.dropdown:hover .dropdown-content {
+display: block;
 }
 
 .dropdown-content a {
@@ -180,10 +184,6 @@ padding: 12px 16px;
 display: block;
 text-decoration: none;
 transition: background-color 0.3s ease;
-}
-
-.dropdown:hover .dropdown-content {
-display: block;
 }
 
 .dropdown-content a:hover {
@@ -214,12 +214,14 @@ border: 1px solid #c1beab;
 border-radius: 5px;
 box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.2);
 cursor: pointer;
-transition: background-color 0.5s ease;
+transition: transform 1s ease-in-out;
+transition: background-color 0.7s ease;
 }
 
 .btns:hover {
 background-color: #D5D1BD;
 color: #ffffff;
+transform: scale(1.09);
 }
 
 /* linhas verticais */
@@ -349,12 +351,14 @@ border-radius: 5px;
 cursor: pointer;
 left: -1050px;
 margin-top: 285px;
+transition: transform 0.5s ease-in-out;
 transition: background-color 0.5s ease;
 }
 
 .prevBtnPoI:hover {
 background-color: #D5D1BD;
 color: #ffffff;
+transform: scale(1.05);
 }
 
 .nextBtnPoI { /*btn next*/
@@ -371,12 +375,14 @@ border-radius: 5px;
 cursor: pointer;
 right: -18px;
 margin-top: 285px;
+transition: transform 0.5s ease-in-out;
 transition: background-color 0.5s ease;
 }
 
 .nextBtnPoI:hover {
 background-color: #D5D1BD;
 color: #ffffff;
+transform: scale(1.05);
 }
 
 
@@ -464,12 +470,14 @@ border-radius: 5px;
 cursor: pointer;
 left: -1050px;
 margin-top: 285px;
+transition: transform 0.5s ease-in-out;
 transition: background-color 0.5s ease;
 }
 
 .prevBtnWtV:hover {
 background-color: #D5D1BD;
 color: #ffffff;
+transform: scale(1.05);
 }
 
 .nextBtnWtV { /*btn next*/
@@ -486,12 +494,14 @@ border-radius: 5px;
 cursor: pointer;
 right: -18px;
 margin-top: 285px;
+transition: transform 0.5s ease-in-out;
 transition: background-color 0.5s ease;
 }
 
 .nextBtnWtV:hover {
 background-color: #D5D1BD;
 color: #ffffff;
+transform: scale(1.05);
 }
 
 
@@ -787,7 +797,7 @@ color: #384469;
 font-family: 'Spectral', serif;
 font-style: italic;
 font-weight: 600;
-font-size: 31px;
+font-size: 31.9px;
 color: #384469;
 margin: 10px 0;
 }
@@ -867,7 +877,7 @@ color: #384469;
 font-family: 'Spectral', serif;
 font-style: italic;
 font-weight: 600;
-font-size: 31px;
+font-size: 40px;
 color: #384469;
 margin: 10px 0;
 }
@@ -939,7 +949,7 @@ padding: 25px;
 }
 
 .h2-stars {
-font-size: 20px;
+font-size: 25px;
 color: #384469;
 }
 
@@ -947,7 +957,7 @@ color: #384469;
 font-family: 'Spectral', serif;
 font-style: italic;
 font-weight: 600;
-font-size: 31px;
+font-size: 40px;
 color: #384469;
 margin: 10px 0;
 }
@@ -1006,7 +1016,13 @@ background-color: transparent;
 border: none;
 padding: 0; 
 cursor: pointer;
+transition: transform 0.3s ease-in-out;
 }
+
+.up-arrow-btn:hover {
+transform: scale(1.5);
+}
+
 
 
 /* FOOTER */

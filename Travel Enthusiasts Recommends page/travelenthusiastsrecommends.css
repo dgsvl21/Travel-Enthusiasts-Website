@@ -332,6 +332,11 @@ body::-webkit-scrollbar-thumb:hover {
   border: none;
   padding: 0; 
   cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.up-arrow-btn:hover {
+  transform: scale(1.5);
 }
 
 
@@ -377,7 +382,7 @@ body::-webkit-scrollbar-thumb:hover {
   margin-right: 10px;
 }
 
-.twitter { /* posicionar logo twitter */
+.youtube { /* posicionar logo ytb */
   margin-left: 13px;
 }
 

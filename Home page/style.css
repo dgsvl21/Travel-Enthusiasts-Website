@@ -932,6 +932,11 @@ main {
   border: none;
   padding: 0; 
   cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.up-arrow-btn:hover {
+  transform: scale(1.5);
 }
 
 

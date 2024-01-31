@@ -4,7 +4,7 @@ const mainSection = document.getElementById("main");
 window.scrollTo({
     top: mainSection.offsetTop,
     behavior: "smooth"
-})
+  })
 }
 
 //scroll to-top btn
@@ -12,7 +12,7 @@ function scrollToTop() {
 window.scrollTo({
     top: 0,
     behavior: "smooth"
-})
+  })
 }
 
 
@@ -126,7 +126,7 @@ WtEbtn.addEventListener('click', function() {
 });
 
 
-//WtP btn scroll
+//WtS btn scroll
 const WtSbtn = document.getElementById('WtSbtn');
 
 WtSbtn.addEventListener('click', function() {
