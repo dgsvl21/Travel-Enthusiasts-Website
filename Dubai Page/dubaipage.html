@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dubai</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@300;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/Dubai Page/dubaistyle.css" />
+</head>
+
+<body>
+
+    <div class="landing-container" id="landing-section">
+        <div class="landing-image"></div>
+        <div class="landing-layer1"></div>
+
+        <button class="scroll-button" onclick="scrollToMain()">
+            <svg class="arrows">
+                <path class="a1" d="M0 0 L30 32 L60 0"></path>
+                <path class="a2" d="M0 20 L30 52 L60 20"></path>
+                <path class="a3" d="M0 40 L30 72 L60 40"></path>
+            </svg>
+        </button>
+
+    </div>
+
+    <main id="main">
+        <nav class="navbar" id="navbar">
+            <a class="navbarlogo-container" href="/Home page/index.html">
+                <img id="nav-logo" src="/Images/Travel Enthusiasts 2 PEQUENO.png" alt="TravelEnthusiasts" />
+            </a>
+            <div class="menudropdown-container">
+                <div class="menu-links" id="menu-links">
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="20" width="17.5" viewBox="0 0 448 512">
+                                <path fill="#ffffff"
+                                    d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+                            </svg>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="/Home page/index.html">Home</a>
+                            <a href="/Destinations page/destinations.html">Destinations</a>
+                            <a href="/Recommended Website page/recommendedwebsite.html">Recommended Websites</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Conteudo da pagina -->
+
+        <!-- btns -->
+        <div class="btns-container">
+            <button class="btns" id="PoIbtn">Points of interest</button>
+            <button class="btns" id="WtVbtn">What to visit</button>
+            <button class="btns" id="WtEbtn">Where to eat</button>
+            <button class="btns" id="WtSbtn">Where to sleep</button>
+        </div>
+
+        <hr>
+
+        <!-- inicio do conteudo -->
+        <h1 class="dubai-title">WHY DUBAI?</h1>
+        <p class="dubai-description">
+            Dubai, a futuristic oasis in the desert, entices tourists with its extravagant architecture,
+            including the Burj Khalifa and Palm Jumeirah. <br>
+            Known for luxury shopping, dazzling entertainment, and a rich blend of <br>
+            cultures, Dubai offers a unique and opulent experience. The city's commitment to <br>
+            innovation, such as the indoor ski resort and the Burj Al Arab, <br>
+            makes it a sought-after destination for those seeking a lavish and <br>
+            modern escape in the heart of the Middle East. <br>
+        </p>
+
+        <hr>
+
+        <div class="dubai_wallpaper-container">
+            <img class="dubai-wallpaper2" src="/Dubai Page/Images/Dubai Wallpaper 2.jpg" alt="Porto">
+        </div>
+
+        <hr>
+
+        <!-- Points of Interest -->
+        <h1 class="PoI-title">Points of Interest</h1>
+        <div class="PoI-container">
+
+            <div class="PoI_slider-container">
+
+                <div class="sliderPoI">
+
+                    <div class="slidePoI">
+                        <img src="/Dubai Page/Images/Points of interest/Burj Khalifa.jpeg" alt="Burj Khalifa">
+                        <div class="slide-contentPoI">
+                            <h1>Burj Khalifa</h1>
+                            <p>1 Mohammed Bin Rashid Boulevard
+                                Downtown Dubai
+                                Dubai, UAE</p>
+                        </div>
+                    </div>
+
+                    <div class="slidePoI">
+                        <img src="/Dubai Page/Images/Points of interest/The Dubai Fountain.jpg"
+                            alt="The Dubai Fountain">
+                        <div class="slide-contentPoI">
+                            <h1>The Dubai Fountain</h1>
+                            <p>Downtown Dubai - Dubai - United Arab Emirates</p>
+                        </div>
+                    </div>
+
+                    <div class="slidePoI">
+                        <img src="/Dubai Page/Images/Points of interest/The Dubai Mall.jpg" alt="The Dubai Mall">
+                        <div class="slide-contentPoI">
+                            <h1>The Dubai Mall</h1>
+                            <p>Downtown Dubai - Dubai - United Arab</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <button class="prevBtnPoI" id="prevBtnPoI">Previous</button>
+            <button class="nextBtnPoI" id="nextBtnPoI">Next</button>
+
+        </div>
+
+        <hr>
+
+        <!-- What to Vist -->
+        <h1 class="WtV-title">What to Visit</h1>
+        <div class="WtV-container">
+
+            <div class="WtV_slider-container">
+
+                <div class="sliderWtV">
+
+                    <div class="slideWtV">
+                        <img src="/Dubai Page/Images/What to visit/AURA SKYPOOL Dubai.jpg" alt="AURA SKYPOOL Dubai">
+                        <div class="slide-contentWtV">
+                            <h1>AURA SKYPOOL Dubai</h1>
+                            <p>Palm Jumeirah, The Palm Tower - 50th Floor - The Palm Jumeirah - Dubai - United Arab
+                                Emirates</p>
+                        </div>
+                    </div>
+
+                    <div class="slideWtV">
+                        <img src="/Dubai Page/Images/What to visit/Dubai Miracle Garden.jpg" alt="Dubai Miracle Garden">
+                        <div class="slide-contentWtV">
+                            <h1>Dubai Miracle Garden</h1>
+                            <p>Street 3 - Al Barsha - Al Barsha South - Dubai - United Arab Emirates</p>
+                        </div>
+                    </div>
+
+                    <div class="slideWtV">
+                        <img src="/Dubai Page/Images/What to visit/Atlantis Aquaventure Waterpark.jpg"
+                            alt="Atlantis Aquaventure Waterpark">
+                        <div class="slide-contentWtV">
+                            <h1>Atlantis Aquaventure Waterpark</h1>
+                            <p>Atlantis The Palm - Crescent Rd - Dubai - United Arab Emirates</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <button class="prevBtnWtV" id="prevBtnWtV">Previous</button>
+            <button class="nextBtnWtV" id="nextBtnWtV">Next</button>
+
+        </div>
+
+        <hr>
+
+        <!-- Where to eat -->
+        <h1 class="WtE-title">Where to Eat</h1>
+
+        <div class="WtE-container">
+
+            <!-- Couqley French Bistro & Bar -->
+            <div class="couqleyfrench-container">
+                <img src="/Dubai Page/Images/Where to eat/Couqley French Bistro & Bar.jpeg"
+                    alt="Couqley French Bistro & Bar">
+                <h1>Couqley French Bistro & Bar</h1>
+
+                <div class="couqleyfrench-rating">
+                    <a href="https://www.tripadvisor.com/Restaurant_Review-g295424-d10336417-Reviews-Couqley_French_Bistro_Bar-Dubai_Emirate_of_Dubai.html"
+                        target="_blank">
+                        <button class="tripadvisor-btn">
+                            <img src="https://img.icons8.com/color/48/tripadvisor.png" alt="tripadvisorIcon" />
+                        </button>
+                    </a>
+                </div>
+                <p>€€ - €€€ French, European, Vegetarian Friendly</p>
+                <p>
+                    <img class="map-icon" src="https://img.icons8.com/material-outlined/24/384469/place-marker--v2.png"
+                        alt="place-marker--v2" />
+                    Laguna Tower , Cluster A, Jumeirah Lake Towers Mövenpick Hotel, Dubai 00000 United Arab Emirates
+                </p>
+
+                <p>
+                    <img class="phone-icon" src="https://img.icons8.com/ios-filled/50/384469/ringer-volume.png"
+                        alt="ringer-volume" />
+                    +971 4 514 9339
+                </p>
+            </div>
+
+            <!-- Jones The Grocer - Delta Jbr -->
+            <div class="jonesthegrocer-container">
+                <img src="/Dubai Page/Images/Where to eat/Jones The Grocer - Delta Jbr.jpg"
+                    alt="Jones The Grocer - Delta Jbr">
+                <h1>Jones The Grocer - Delta Jbr</h1>
+
+                <div class="jonesthegrocer-rating">
+                    <a href="https://www.tripadvisor.com/Restaurant_Review-g295424-d25152460-Reviews-Jones_The_Grocer_Delta_Jbr-Dubai_Emirate_of_Dubai.html"
+                        target="_blank">
+                        <button class="tripadvisor-btn">
+                            <img width="48" height="48" src="https://img.icons8.com/color/48/tripadvisor.png"
+                                alt="tripadvisorIcon" />
+                        </button>
+                    </a>
+                </div>
+                <p>€€€ - €€€€ Australian, Vegetarian Friendly, Vegan Options</p>
+                <p>
+                    <img class="map-icon" src="https://img.icons8.com/material-outlined/24/384469/place-marker--v2.png"
+                        alt="place-marker--v2" />
+                    Jumeirah Beach Delta Hotels by Marriott, Dubai United Arab Emirates
+                </p>
+
+                <p>
+                    <img class="phone-icon" src="https://img.icons8.com/ios-filled/50/384469/ringer-volume.png"
+                        alt="ringer-volume" />
+                    +971 4 439 8883
+                </p>
+            </div>
+
+            <!-- OKKU Dubai -->
+            <div class="okku-container">
+                <img src="/Dubai Page/Images/Where to eat/OKKU Dubai.jpg" alt="OKKU Dubai">
+                <h1>OKKU Dubai</h1>
+
+                <div class="okku-rating">
+                    <a href="https://www.tripadvisor.com/Restaurant_Review-g295424-d26286267-Reviews-OKKU_Dubai-Dubai_Emirate_of_Dubai.html"
+                        target="_blank">
+                        <button class="tripadvisor-btn">
+                            <img width="48" height="48" src="https://img.icons8.com/color/48/tripadvisor.png"
+                                alt="tripadvisorIcon" />
+                        </button>
+                    </a>
+                </div>
+                <p>€€€ - €€€€ Japanese, Asian, Healthy</p>
+                <p>
+                    <img class="map-icon" src="https://img.icons8.com/material-outlined/24/384469/place-marker--v2.png"
+                        alt="place-marker--v2" />
+                    Marriott Resort Palm - Jumeirah, Dubai United Arab Emirates
+                </p>
+
+                <p>
+                    <img class="phone-icon" src="https://img.icons8.com/ios-filled/50/384469/ringer-volume.png"
+                        alt="ringer-volume" />
+                    +971 4 666 1566
+                </p>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <!-- Where to sleep -->
+        <h1 class="WtS-title">Where to Sleep</h1>
+
+        <div class="WtS-container">
+
+            <!-- Jumeirah Village -->
+            <div class="jumeirahvillage-container">
+                <img src="/Dubai Page/Images/Where to sleep/The First Collection at Jumeirah Village Circle.jpg"
+                    alt="Jumeirah Village">
+                <div class="jumeirahvillage-text-container">
+                    <h2 class="h2-stars">&#9733 &#9733 &#9733 &#9733</h2>
+                    <h1>The First Collection at Jumeirah Village Circle</h1>
+
+                    <div class="jumeirahvillage-rating">
+                        <a href="https://www.tripadvisor.com/Hotel_Review-g295424-d23631662-Reviews-The_First_Collection_at_Jumeirah_Village_Circle-Dubai_Emirate_of_Dubai.html"
+                            target="_blank">
+                            <button class="tripadvisor-btn">
+                                <img class="tripadvisor-icon" src="https://img.icons8.com/color/48/tripadvisor.png"
+                                    alt="tripadvisorIcon" />
+                            </button>
+                        </a>
+                    </div>
+                    <p>5.0 Excellent</p>
+                    <p>
+                        <img class="map-icon"
+                            src="https://img.icons8.com/material-outlined/24/384469/place-marker--v2.png"
+                            alt="place-marker--v2" />
+                        Street 1 Jumeirah Village Circle, Dubai 215373 United Arab Emirates
+                    </p>
+
+                    <p>
+                        <img class="phone-icon" src="https://img.icons8.com/ios-filled/50/384469/ringer-volume.png"
+                            alt="ringer-volume" />
+                        +971 4 275 6666
+                    </p>
+
+                    <a href="https://reservations.thefirstcollection.ae/114870#/guestsandrooms" target="_blank">
+                        <button class="ReserveBTN">Reserve Now</button>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Atlantis The Palm -->
+            <div class="atlantisthepalm-container">
+                <img src="/Dubai Page/Images/Where to sleep/Atlantis The Palm.jpg" alt="Atlantis The Palm">
+                <div class="atlantisthepalm-text-container">
+                    <h2 class="h2-stars">&#9733 &#9733 &#9733 &#9733 &#9733</h2>
+                    <h1>Atlantis The Palm</h1>
+
+                    <div class="atlantisthepalm-rating">
+                        <a href="https://www.tripadvisor.com/Hotel_Review-g295424-d1022759-Reviews-Atlantis_The_Palm-Dubai_Emirate_of_Dubai.html"
+                            target="_blank">
+                            <button class="tripadvisor-btn">
+                                <img class="tripadvisor-icon" src="https://img.icons8.com/color/48/tripadvisor.png"
+                                    alt="tripadvisorIcon" />
+                            </button>
+                        </a>
+                    </div>
+                    <p>4.5 Excellent</p>
+                    <p>
+                        <img class="map-icon"
+                            src="https://img.icons8.com/material-outlined/24/384469/place-marker--v2.png"
+                            alt="place-marker--v2" />
+                        Crescent Road, Dubai United Arab Emirates
+                    </p>
+
+                    <p>
+                        <img class="phone-icon" src="https://img.icons8.com/ios-filled/50/384469/ringer-volume.png"
+                            alt="ringer-volume" />
+                        +971 4 426 2000
+                    </p>
+
+                    <a href="https://www.atlantis.com/dubai/reservations/destination-rooms/book-now" target="_blank">
+                        <button class="ReserveBTN">Reserve Now</button>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Palace Downtown -->
+            <div class="palacedowntown-container">
+                <img src="/Dubai Page/Images/Where to sleep/Palace Downtown.jpg" alt="Palace Downtown">
+                <div class="palacedowntown-text-container">
+                    <h2 class="h2-stars">&#9733 &#9733 &#9733 &#9733 &#9733</h2>
+                    <h1>Palace Downtown</h1>
+
+                    <div class="palacedowntown-rating">
+                        <a href="https://www.tripadvisor.com/Hotel_Review-g295424-d674456-Reviews-Palace_Downtown-Dubai_Emirate_of_Dubai.html"
+                            target="_blank">
+                            <button class="tripadvisor-btn">
+                                <img class="tripadvisor-icon" src="https://img.icons8.com/color/48/tripadvisor.png"
+                                    alt="tripadvisorIcon" />
+                            </button>
+                        </a>
+                    </div>
+                    <p>5.0 Excellent</p>
+                    <p>
+                        <img class="map-icon"
+                            src="https://img.icons8.com/material-outlined/24/384469/place-marker--v2.png"
+                            alt="place-marker--v2" />
+                        Mohammed Bin Rashid Boulevard, Dubai United Arab Emirates
+                    </p>
+
+                    <p>
+                        <img class="phone-icon" src="https://img.icons8.com/ios-filled/50/384469/ringer-volume.png"
+                            alt="ringer-volume" />
+                        +971 4 428 7888
+                    </p>
+
+                    <a href="https://www.addresshotels.com/en/hotels/palace-downtown/" target="_blank">
+                        <button class="ReserveBTN">Reserve Now</button>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- Scroll to top BTN -->
+        <button class="up-arrow-btn" onclick="scrollToTop()">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24" width="18" viewBox="0 0 384 512">
+                <path
+                    d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160"
+                    fill="#384469" />
+            </svg>
+        </button>
+
+
+        <!-- Footer -->
+        <footer class="footer-TE">
+            <div class="footer-conteudo">
+                <div class="footer-socials">
+                    <div class="footerlogo-container">
+                        <img src="/Images/Travel Enthusiasts 1.png" alt="Logo TE 1">
+                    </div>
+                    <div class="socials-container">
+                        <a href="https://www.instagram.com/_te2023_/" target="_blank">
+                            <img class="insta" src="/Images/icons/instagram.png" alt="Instagram">
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCZZ5yRaYqaW_PMWc9VqOu4g" target="_blank">
+                            <img class="youtube" src="/Images/icons/youtube.png" alt="Twitter">
+                        </a>
+                        <a href="https://www.facebook.com/"> <!-- Alterar links -->
+                            <img class="facebook" src="/Images/icons/facebook.png" alt="Facebook">
+                        </a>
+                    </div>
+                    <h6 class="rights-reservedTXT">© 2023 Travel Enthusiasts. All rights reserved.</h6>
+                </div>
+
+                <div class="vertical-line1"></div>
+
+                <h6 class="newsletter-txt">Newsletter</h6>
+                <div class="newsletter-container">
+                    <form action="URL_DO_SEU_FORMULARIO_MAILCHIMP" method="post"> <!-- usar Mailchimp -->
+                        <input type="emailInput" id="newsletterInputTxt" name="email" placeholder="Enter your email"
+                            required>
+                        <button type="subBtn">Subscribe</button>
+                    </form>
+                </div>
+
+                <div class="vertical-line2"></div>
+
+                <div class="contacts-container">
+                    <a href="/Contact us page/contactus.html">
+                        <h6 class="containerTxt-1">Contact Us</h6>
+                    </a>
+                    <a href="/Terms of Service page/termsofservice.html">
+                        <h6 class="containerTxt-2">Terms of Service</h6>
+                    </a>
+                    <a href="/Privacy Policy page/privacypolicy.html">
+                        <h6 class="containerTxt-3">Privacy Policy</h6>
+                    </a>
+                </div>
+
+            </div>
+        </footer>
+
+    </main>
+
+    <script src="/Dubai Page/dubaiscripts.js"></script>
+</body>
+
+</html>

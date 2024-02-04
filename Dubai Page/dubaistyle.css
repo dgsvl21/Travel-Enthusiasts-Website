@@ -1,0 +1,1203 @@
+body, html {
+margin: 0;
+padding: 0;
+background-color: #ECE9DB;
+font-family: 'Spectral', serif;
+height: 100%;
+position: relative;
+scroll-behavior: smooth;
+}
+
+/* Costumizacao da Scroll Bar */
+body::-webkit-scrollbar {
+width: 13px;
+}
+
+body::-webkit-scrollbar-track {
+background-color: #dadada;
+}
+
+body::-webkit-scrollbar-thumb {
+background-color: #384469;
+border-left: 1px solid #c4c4c4;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+background-color: #272f49;
+}
+
+/* Landing page */
+
+.landing-container {
+position: relative;
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+overflow: hidden;
+}
+
+
+.landing-image {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-image: url('/Images/Destinos/Duabi\ wallpaper\ dark.png');
+background-position: center;
+background-size: cover;
+z-index: 0;
+} 
+
+.landing-layer1 {
+position: absolute;
+top: -17px;
+left: 0;
+width: 100%;
+height: 100%;
+background-image: url('destinos_Dubai.png');
+background-size: cover;
+opacity: 1;
+}
+
+
+/* Setas animacao scroll */
+.arrows {
+width: 60px;
+height: 72px;
+position: absolute;
+left: 50%;
+margin-left: -30px;
+bottom: 20px;
+cursor: pointer;
+}
+
+.arrows path {
+stroke: #ffffff;
+fill: transparent;
+stroke-width: 2px;  
+animation: arrow 2s infinite;
+-webkit-animation: arrow 2s infinite; 
+}
+
+@keyframes arrow
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+@-webkit-keyframes arrow 
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+.arrows path.a1 {
+animation-delay:-1s;
+-webkit-animation-delay:-1s;
+}
+
+.arrows path.a2 {
+animation-delay:-0.5s;
+-webkit-animation-delay:-0.5s;
+}
+
+.arrows path.a3 { 
+animation-delay:0s;
+-webkit-animation-delay:0s;
+}
+
+
+/* Tudo relativo a navbar apos landing page */
+/* navbar */
+.navbar {
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: rgb(56, 68, 105);
+padding: 7px;
+}
+
+.navbarlogo-container {
+flex-shrink: 0;
+margin-left: auto;
+margin-right: 890px;
+background-color: transparent;
+border: none;
+cursor: pointer;
+}
+
+#nav-logo {
+width: 113px;
+height: auto;
+}
+
+/*Menu dropdown*/
+.menudropdown-container {
+order: -1;
+position: relative;
+z-index: 1;
+}
+
+.menu-links {
+display: flex;
+align-items: center;
+}
+
+.dropbtn {
+background-color: transparent;
+border: none;
+cursor: pointer;
+padding: 10px;
+transition: background-color 0.3s ease;
+}
+
+.dropdown {
+position: relative;
+display: inline-block;
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #ffffff;
+box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.275);
+}
+
+.dropdown:hover .dropdown-content {
+display: block;
+}
+
+.dropdown-content a {
+color: #384469;
+font-size: large;
+font-family: 'Spectral', serif;
+font-style: italic;
+background-color: #ffffff;
+padding: 12px 16px;
+display: block;
+text-decoration: none;
+transition: background-color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+background-color: #0000001c;
+}
+
+
+/* Conteudo do resto da pagina */
+
+/* BTNS */
+.btns-container {
+display:flex;
+justify-content: center;
+gap: 50px;
+align-items: center;
+margin-top: 25px;
+}
+
+.btns {
+font-family:'Spectral', serif;
+font-style: italic;
+font-weight: 600;
+font-size: 19px;
+background-color: #ffffff;
+color: #b9ac92;
+padding: 8px 8px 8px;
+border: 1px solid #c1beab;
+border-radius: 5px;
+box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.2);
+cursor: pointer;
+transition: transform 1s ease-in-out;
+transition: background-color 0.7s ease;
+}
+
+.btns:hover {
+background-color: #D5D1BD;
+color: #ffffff;
+transform: scale(1.09);
+}
+
+/* linhas verticais */
+hr {
+width: 70%;
+border-top: 1px solid #ffffff;
+margin-top: 20px;
+box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.400);
+}
+
+/* WHY DUBAI? title */
+.dubai-title {
+font-family:'Spectral', serif;
+font-style: italic;
+font-size: 20px;
+color: #384469;
+display: flex;
+justify-content: center;
+margin-top: 50px;
+}
+
+.dubai-description {
+font-family:'Spectral', serif;
+font-style: normal;
+font-size: 30px;
+color: #384469;
+display: flex;
+justify-content: center;
+text-align: center;
+}
+
+/* Wallpaper 2 */
+.dubai_wallpaper-container {
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 70px;
+margin-bottom: 70px;
+}
+
+.dubai-wallpaper2 {
+width: 1338px;
+height: 725px;
+} 
+
+
+/* Points of interest */
+.PoI-title { 
+font-family:'Spectral', serif;
+font-style: italic;
+font-weight: 600;
+font-size: 40px;
+color: #384469;
+margin-top: 50px;
+margin-bottom: 50px;
+align-items: center;
+justify-content: center;
+display: flex;
+}
+
+.PoI-container {
+display: flex;
+justify-content: center;
+align-items:flex-start;
+}
+
+.PoI_slider-container { /*contentor SLIDER*/
+position: relative;
+display: flex;
+left: 92px;
+overflow: hidden;
+max-width: 1000px;
+max-height: 600px;
+margin-top: -25px;
+margin-bottom: 70px;
+}
+
+.sliderPoI {
+display: flex;
+transition: transform 0.5s ease-in-out;
+}
+
+.slidePoI {
+flex: 0 0 100%;
+position: relative;
+}
+
+.slidePoI img {
+width: 100%;
+height: 100%;
+}
+
+.slide-contentPoI {
+position: absolute;
+bottom: 0;
+background: hsla(0, 0%, 0%, 0.700);
+width: 100%;
+padding: 10px;
+color: #ffffff;
+}
+
+.slidePoI h1 {
+font-family: 'Spectral', serif;
+font-style: italic;
+margin: 0;
+margin-left: 10px;
+}
+
+.slidePoI p {
+font-family: 'Spectral', serif;
+font-size: 20px;
+margin: 0;
+margin-left: 10px;
+}
+
+.prevBtnPoI { /*btn previous*/
+position: relative;
+font-family: 'Spectral', serif;
+font-style: italic;
+font-size: 19px;
+font-weight: 600;
+padding: 8px 15px 8px;
+background-color: #ffffff;
+color: #b9ac92;
+border: 1px solid #c1beab;
+border-radius: 5px;
+cursor: pointer;
+left: -1050px;
+margin-top: 285px;
+transition: transform 0.5s ease-in-out;
+transition: background-color 0.5s ease;
+}
+
+.prevBtnPoI:hover {
+background-color: #D5D1BD;
+color: #ffffff;
+transform: scale(1.05);
+}
+
+.nextBtnPoI { /*btn next*/
+position: relative;
+font-family: 'Spectral', serif;
+font-style: italic;
+font-size: 19px;
+font-weight: 600;
+padding: 8px 15px 8px;
+background-color: #ffffff;
+color: #b9ac92;
+border: 1px solid #c1beab;
+border-radius: 5px;
+cursor: pointer;
+right: -18px;
+margin-top: 285px;
+transition: transform 0.5s ease-in-out;
+transition: background-color 0.5s ease;
+}
+
+.nextBtnPoI:hover {
+background-color: #D5D1BD;
+color: #ffffff;
+transform: scale(1.05);
+}
+
+
+
+/* What to visit */
+.WtV-title { 
+font-family:'Spectral', serif;
+font-style: italic;
+font-weight: 600;
+font-size: 40px;
+color: #384469;
+margin-top: 50px;
+margin-bottom: 50px;;
+align-items: center;
+justify-content: center;
+display: flex;
+}
+
+.WtV-container {
+display: flex;
+justify-content: center;
+align-items:flex-start
+}
+
+.WtV_slider-container { /*contentor SLIDER*/
+position: relative;
+display: flex;
+left: 92px;
+overflow: hidden;
+max-width: 1000px;
+max-height: 600px;
+margin-top: -25px;
+margin-bottom: 70px;
+}
+
+.sliderWtV {
+display: flex;
+transition: transform 0.5s ease-in-out;
+}
+
+.slideWtV {
+flex: 0 0 100%;
+position: relative;
+}
+
+.slideWtV img {
+width: 100%;
+height: 100%;
+}
+
+.slide-contentWtV {
+position: absolute;
+bottom: 0;
+background: rgba(0, 0, 0, 0.7);
+width: 100%;
+padding: 10px;
+color: #ffffff;
+}
+
+.slideWtV h1 {
+font-family: 'Spectral', serif;
+font-style: italic;
+margin: 0;
+margin-left: 10px;
+}
+
+.slideWtV p {
+font-family: 'Spectral', serif;
+font-size: 20px;
+margin: 0;
+margin-left: 10px;
+}
+
+.prevBtnWtV { /*btn previous*/
+position: relative;
+font-family: 'Spectral', serif;
+font-style: italic;
+font-size: 19px;
+font-weight: 600;
+padding: 8px 15px 8px;
+background-color: #ffffff;
+color: #b9ac92;
+border: 1px solid #c1beab;
+border-radius: 5px;
+cursor: pointer;
+left: -1050px;
+margin-top: 285px;
+transition: transform 0.5s ease-in-out;
+transition: background-color 0.5s ease;
+}
+
+.prevBtnWtV:hover {
+background-color: #D5D1BD;
+color: #ffffff;
+transform: scale(1.05);
+}
+
+.nextBtnWtV { /*btn next*/
+position: relative;
+font-family: 'Spectral', serif;
+font-style: italic;
+font-size: 19px;
+font-weight: 600;
+padding: 8px 15px 8px;
+background-color: #ffffff;
+color: #b9ac92;
+border: 1px solid #c1beab;
+border-radius: 5px;
+cursor: pointer;
+right: -18px;
+margin-top: 285px;
+transition: transform 0.5s ease-in-out;
+transition: background-color 0.5s ease;
+}
+
+.nextBtnWtV:hover {
+background-color: #D5D1BD;
+color: #ffffff;
+transform: scale(1.05);
+}
+
+
+
+/* Where to Eat */
+.WtE-title {
+font-family:'Spectral', serif;
+font-style: italic;
+font-weight: 600;
+font-size: 40px;
+color: #384469;
+margin-top: 50px;
+align-items: center;
+justify-content: center;
+display: flex;
+}
+
+.WtE-container {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin: 0 50px;
+}
+
+.couqleyfrench-container { /* Couqley French Bistro & Bar Container */
+box-shadow: 5px 5px 15px #857c69d3;
+border-radius: 8px;
+max-width: 500px;
+max-height: 800px;
+margin-left: 10px;
+padding: 15px;
+background-color: #ffffff;
+transition: transform 0.3s ease-in-out;
+}
+
+.couqleyfrench-container:hover {
+transform: scale(1.02);
+}
+
+.couqleyfrench-container img {
+width: 100%;
+border-radius: 8px 8px 0 0;
+}
+
+.couqleyfrench-container h1 {
+font-family:'Spectral', serif;
+font-style: italic;
+font-weight: 600;
+font-size: 30px;
+color: #384469;
+margin: 10px 0;
+text-align: center;
+}
+
+.couqleyfrench-rating {
+margin-bottom: 10px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.tripadvisor-btn {
+cursor: pointer;
+background-color: transparent;
+border: none;
+margin-top: -10px;
+}
+
+.tripadvidor-icon {
+height: 50px;
+width: auto;
+}
+
+.couqleyfrench-container p {
+font-family:'Spectral', serif;
+font-weight: 500;
+font-size: 22px;
+color: #384469;
+margin: 10px 0;
+text-align: center;
+}
+
+.map-icon {
+width: auto !important;
+height: 24px;
+margin-right: 5px;
+margin-bottom: -3px;
+}
+
+.phone-icon {
+width: auto !important;
+height: 24px;
+margin-right: 5px;
+margin-bottom: -3px;
+}
+
+.jonesthegrocer-container { /* Jones The Grocer - Delta Jbr Container */
+box-shadow: 5px 5px 15px #857c69d3;
+border-radius: 8px;
+max-width: 500px;
+max-height: 800px;
+margin-left: 100px;
+padding: 15px;
+margin-bottom: 20px;
+background-color: #ffffff;
+transition: transform 0.3s ease-in-out;
+}
+
+.jonesthegrocer-container:hover {
+transform: scale(1.02);
+}
+
+.jonesthegrocer-container img {
+width: 100%;
+border-radius: 8px 8px 0 0;
+}
+
+.jonesthegrocer-container h1 {
+font-family:'Spectral', serif;
+font-style: italic;
+font-weight: 600;
+font-size: 30px;
+color: #384469;
+margin: 10px 0;
+text-align: center;
+}
+
+.jonesthegrocer-rating {
+margin-bottom: 10px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.tripadvisor-btn {
+cursor: pointer;
+background-color: transparent;
+border: none;
+margin-top: -10px;
+}
+
+.tripadvidor-icon {
+height: 50px;
+width: auto;
+}
+
+.jonesthegrocer-container p {
+font-family:'Spectral', serif;
+font-weight: 500;
+font-size: 20px;
+color: #384469;
+margin: 10px 0;
+text-align: center;
+}
+
+.map-icon {
+width: auto !important;
+height: 24px;
+margin-right: 5px;
+margin-bottom: -3px;
+}
+
+.phone-icon {
+width: auto !important;
+height: 24px;
+margin-right: 5px;
+margin-bottom: -3px;
+}
+
+.okku-container { /* OKKU Dubai Container */
+box-shadow: 5px 5px 15px #857c69d3;
+border-radius: 8px;
+max-width: 500px;
+max-height: 800px;
+margin-left: 100px;
+padding: 15px;
+background-color: #ffffff;
+transition: transform 0.3s ease-in-out;
+}
+
+.okku-container:hover {
+transform: scale(1.02);
+}
+
+.okku-container img {
+width: 100%;
+border-radius: 8px 8px 0 0;
+}
+
+.okku-container h1 {
+font-family:'Spectral', serif;
+font-style: italic;
+font-weight: 600;
+font-size: 30px;
+color: #384469;
+margin: 10px 0;
+text-align: center;
+}
+
+.okku-rating {
+margin-bottom: 10px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.tripadvisor-btn {
+cursor: pointer;
+background-color: transparent;
+border: none;
+margin-top: -10px;
+}
+
+.tripadvidor-icon {
+height: 50px;
+width: auto;
+}
+
+.okku-container p {
+font-family:'Spectral', serif;
+font-weight: 500;
+font-size: 25px;
+color: #384469;
+margin: 10px 0;
+text-align: center;
+}
+
+.map-icon {
+width: auto !important;
+height: 24px;
+margin-right: 5px;
+margin-bottom: -3px;
+}
+
+.phone-icon {
+width: auto !important;
+height: 24px;
+margin-right: 5px;
+margin-bottom: -3px;
+}
+
+
+/* Where to Sleep */
+.WtS-title {
+font-family:'Spectral', serif;
+font-style: italic;
+font-weight: 600;
+font-size: 40px;
+color: #384469;
+margin-top: 50px;
+align-items: center;
+justify-content: center;
+display: flex;
+}
+
+.WtS-container {
+justify-content: center;
+align-items: center;
+display: flex;
+flex-direction: column;
+gap: 50px;
+}
+
+/*Jumeirah Village*/
+.jumeirahvillage-container {
+background-color: #ffffff;
+border-radius: 8px;
+width: 85%;
+display: flex;
+box-shadow: 5px 5px 15px #857c69d3;
+transition: transform 0.3s ease-in-out;
+}
+
+.jumeirahvillage-container:hover {
+transform: scale(1.02);
+}
+
+.jumeirahvillage-container img {
+width: 55%;
+border-radius: 8px 0 0 8px;
+}
+
+.jumeirahvillage-text-container {
+padding: 25px;
+}
+
+.h2-stars {
+font-size: 20px;
+color: #384469;
+}
+
+.jumeirahvillage-text-container h1 {
+font-family: 'Spectral', serif;
+font-style: italic;
+font-weight: 600;
+font-size: 31.9px;
+color: #384469;
+margin: 10px 0;
+}
+
+.tripadvisor-btn {
+display: flex;
+cursor: pointer;
+background-color: transparent;
+border: none;
+margin: 10px;
+}
+
+.tripadvisor-icon {
+height: 70px;
+width: 70px !important;
+}
+
+.jumeirahvillage-text-container p {
+font-family: 'Spectral', serif;
+font-weight: 500;
+font-size: 30px;
+color: #384469;
+margin: 10px 0;
+}
+
+.ReserveBTN {
+font-family:'Spectral', serif;
+font-style: italic;
+font-weight: 600;
+font-size: 19px;
+background-color: #ffffff;
+color: #b9ac92;
+padding: 8px 8px 8px;
+border: 1px solid #c1beab;
+border-radius: 5px;
+box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.2);
+margin-top: 10px;
+cursor: pointer;
+transition: background-color 0.5s ease;
+}
+
+.ReserveBTN:hover {
+background-color: #D5D1BD;
+color: #ffffff;
+}
+
+
+/*Atlantis The Palm*/
+.atlantisthepalm-container {
+background-color: #ffffff;
+border-radius: 8px;
+width: 85%;
+display: flex;
+box-shadow: 5px 5px 15px #857c69d3;
+transition: transform 0.3s ease-in-out;
+}
+
+.atlantisthepalm-container:hover {
+transform: scale(1.02);
+}
+
+.atlantisthepalm-container img {
+width: 55%;
+border-radius: 8px 0 0 8px;
+}
+
+.atlantisthepalm-text-container {
+padding: 25px;
+}
+
+.h2-stars {
+font-size: 20px;
+color: #384469;
+}
+
+.atlantisthepalm-text-container h1 {
+font-family: 'Spectral', serif;
+font-style: italic;
+font-weight: 600;
+font-size: 40px;
+color: #384469;
+margin: 10px 0;
+}
+
+.tripadvisor-btn {
+display: flex;
+cursor: pointer;
+background-color: transparent;
+border: none;
+margin: 10px;
+}
+
+.tripadvisor-icon {
+height: 70px;
+width: 70px !important;
+}
+
+.atlantisthepalm-text-container p {
+font-family: 'Spectral', serif;
+font-weight: 500;
+font-size: 30px;
+color: #384469;
+margin: 10px 0;
+}
+
+.ReserveBTN {
+font-family:'Spectral', serif;
+font-style: italic;
+font-weight: 600;
+font-size: 19px;
+background-color: #ffffff;
+color: #b9ac92;
+padding: 8px 8px 8px;
+border: 1px solid #c1beab;
+border-radius: 5px;
+box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.2);
+margin-top: 10px;
+cursor: pointer;
+transition: background-color 0.5s ease;
+}
+
+.ReserveBTN:hover {
+background-color: #D5D1BD;
+color: #ffffff;
+}
+
+
+/*Palace Downtown*/
+.palacedowntown-container {
+background-color: #ffffff;
+border-radius: 8px;
+width: 85%;
+display: flex;
+box-shadow: 5px 5px 15px #857c69d3;
+transition: transform 0.3s ease-in-out;
+}
+
+.palacedowntown-container:hover {
+transform: scale(1.02);
+}
+
+.palacedowntown-container img {
+width: 55%;
+border-radius: 8px 0 0 8px;
+}
+
+.palacedowntown-text-container {
+padding: 25px;
+}
+
+.h2-stars {
+font-size: 25px;
+color: #384469;
+}
+
+.palacedowntown-text-container h1 {
+font-family: 'Spectral', serif;
+font-style: italic;
+font-weight: 600;
+font-size: 40px;
+color: #384469;
+margin: 10px 0;
+}
+
+.tripadvisor-btn {
+display: flex;
+cursor: pointer;
+background-color: transparent;
+border: none;
+margin: 10px;
+}
+
+.tripadvisor-icon {
+height: 70px;
+width: 70px !important;
+}
+
+.palacedowntown-text-container p {
+font-family: 'Spectral', serif;
+font-weight: 500;
+font-size: 30px;
+color: #384469;
+margin: 10px 0;
+}
+
+.ReserveBTN {
+font-family:'Spectral', serif;
+font-style: italic;
+font-weight: 600;
+font-size: 19px;
+background-color: #ffffff;
+color: #b9ac92;
+padding: 8px 8px 8px;
+border: 1px solid #c1beab;
+border-radius: 5px;
+box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.2);
+margin-top: 10px;
+cursor: pointer;
+transition: background-color 0.5s ease;
+}
+
+.ReserveBTN:hover {
+background-color: #D5D1BD;
+color: #ffffff;
+}
+
+
+/* BTN scroll up */
+.up-arrow-btn {
+width: 40px;
+height: 40px;
+margin-left: 1850px;
+margin-top: 200px;
+color: #384469;
+background-color: transparent;
+border: none;
+padding: 0; 
+cursor: pointer;
+transition: transform 0.3s ease-in-out;
+}
+
+.up-arrow-btn:hover {
+transform: scale(1.5);
+}
+
+
+
+/* FOOTER */
+.footer-TE {
+background-color: #384469;
+color: #fff;
+padding: 4px 0 20px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.footer-TE a {
+text-decoration: none;
+}
+
+.footer-conteudo {
+position: relative;
+} 
+
+/* Logo and Socials */
+.footerlogo-container {
+margin-top: 20px;
+margin-left: 30px;
+}
+
+.footerlogo-container img {
+width: 320px;
+height: auto;
+}
+
+.socials-container {
+display: flex;
+margin-top: 25px;
+margin-left: 115px;
+}
+
+.socials-container img {
+width: 40px;
+height: auto;
+margin-right: 10px;
+}
+
+.youtube { /* posicionar logo youtube */
+margin-left: 13px;
+}
+
+.rights-reservedTXT {
+font-family: 'Spectral', serif;
+font-size: 10px;
+font-weight: 600;
+color: #ffffffc5;
+margin-bottom: 0px;
+margin-left: 82px;
+}
+
+
+/* Linha vertical 1 */
+.vertical-line1 {
+border-left: 1px solid #ffffffa4;
+height: 180px;
+position: absolute;
+top: 15px;
+left: 420px;
+bottom: 0;
+}
+
+
+/* Newletter */
+.newsletter-txt {
+font-family: serif;
+font-style: italic;
+position: absolute;
+top: -20%; 
+left: 850px; 
+font-size: 35px;
+color: #ffffff;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.616);
+}
+
+.newsletter-container {
+width: 800px;
+background-color: transparent;
+border-radius: 2px;
+text-align: left;
+display: flex;
+align-items: center;
+position: absolute;
+left: 650px;
+margin: 0;
+top: 130px;
+transform: translateY(-50%);
+}
+
+.newsletter-container input[type="emailInput"] {
+width: 500px;
+padding: 9px;
+box-sizing: border-box;
+font-family: 'Spectral', serif;
+font-style: italic;
+font-size: 15px;
+outline: 0;
+}
+
+.newsletter-container input[type="emailInput"]::placeholder {
+font-size: 15px;
+font-family: 'Spectral', serif;
+font-style: italic;
+}
+
+button[type="subBtn"] {
+width: 100px;
+padding: 8px;
+font-family: 'Spectral', serif;
+font-size: 15px;
+text-align: center;
+border: 1px solid rgb(255, 255, 255);
+border-radius: 3px;
+background-color: #384469; 
+color: #ffffff;
+cursor: pointer;
+transition: background-color 0.3s ease;
+margin: 0;
+}
+
+button[type="subBtn"]:hover {
+background-color: #272f49;
+}
+
+
+/* Linha vertical 2 */
+.vertical-line2 {
+border-left: 1px solid #ffffffa4;
+height: 180px;
+position: absolute;
+top: 15px;
+left: 1480px;
+bottom: 0;
+}
+
+
+/* Contacts + Terms + Privacy */
+.containerTxt-1 {
+font-family: serif;
+font-style: italic;
+font-size: 25px;
+color: #ffffff;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.616);
+margin-left: 1650px;
+margin-top: -150px;
+text-decoration: none;
+}
+
+.containerTxt-2 {
+font-family: serif;
+font-style: italic;
+font-size: 25px;
+color: #ffffff;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.616);
+margin-left: 1620px;
+margin-top: -30px;
+text-decoration: none;
+padding: 0;
+}
+
+.containerTxt-3 {
+font-family: serif;
+font-style: italic;
+font-size: 25px;
+color: #ffffff;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.616);
+margin-left: 1630px;
+margin-top: -30px;
+margin-bottom: 10px;
+text-decoration: none;
+}
+        
+    
