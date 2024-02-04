@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New York</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@300;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/New York Page/newyorkstyle.css" />
+</head>
+
+<body>
+
+    <div class="landing-container" id="landing-section">
+        <div class="landing-image"></div>
+        <div class="landing-layer1"></div>
+
+        <button class="scroll-button" onclick="scrollToMain()">
+            <svg class="arrows">
+                <path class="a1" d="M0 0 L30 32 L60 0"></path>
+                <path class="a2" d="M0 20 L30 52 L60 20"></path>
+                <path class="a3" d="M0 40 L30 72 L60 40"></path>
+            </svg>
+        </button>
+
+    </div>
+
+    <main id="main">
+        <nav class="navbar" id="navbar">
+            <a class="navbarlogo-container" href="/Home page/index.html">
+                <img id="nav-logo" src="/Images/Travel Enthusiasts 2 PEQUENO.png" alt="TravelEnthusiasts" />
+            </a>
+            <div class="menudropdown-container">
+                <div class="menu-links" id="menu-links">
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="20" width="17.5" viewBox="0 0 448 512">
+                                <path fill="#ffffff"
+                                    d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+                            </svg>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="/Home page/index.html">Home</a>
+                            <a href="/Destinations page/destinations.html">Destinations</a>
+                            <a href="/Recommended Website page/recommendedwebsite.html">Recommended Websites</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Conteudo da pagina -->
+
+        <!-- btns -->
+        <div class="btns-container">
+            <button class="btns" id="PoIbtn">Points of interest</button>
+            <button class="btns" id="WtVbtn">What to visit</button>
+            <button class="btns" id="WtEbtn">Where to eat</button>
+            <button class="btns" id="WtSbtn">Where to sleep</button>
+        </div>
+
+        <hr>
+
+        <!-- inicio do conteudo -->
+        <h1 class="porto-title">WHY NEW YORK?</h1>
+        <p class="porto-description">
+            New York, a global metropolis, captivates tourists with its towering skyscrapers, iconic landmarks like <br>
+            Times Square and the Statue of Liberty, and a diverse cultural tapestry. <br>
+            Renowned for Broadway shows, world-class museums, and culinary diversity, the city offers an unparalleled
+            <br>
+            blend of entertainment and exploration. Its vibrant energy, Central Park's green oasis, and the bustling
+            <br>
+            streets make New York a compelling choice for tourism, promising a dynamic and unforgettable experience.
+            <br>
+        </p>
+
+        <hr>
+
+        <div class="porto_wallpaper-container">
+            <img class="porto-wallpaper2" src="/New York Page/Images/New York Wallpaper 2.jpg" alt="Porto">
+        </div>
+
+        <hr>
+
+        <!-- Points of Interest -->
+        <h1 class="PoI-title">Points of Interest</h1>
+        <div class="PoI-container">
+
+            <div class="PoI_slider-container">
+
+                <div class="sliderPoI">
+
+                    <div class="slidePoI">
+                        <img src="/New York Page/Images/Points of interest/Broadway.jpg" alt="Broadway">
+                        <div class="slide-contentPoI">
+                            <h1>Broadway</h1>
+                            <p>Between 41st Street and 54th Street and between Sixth Avenue and Ninth Avenue in
+                                Manhattan</p>
+                        </div>
+                    </div>
+
+                    <div class="slidePoI">
+                        <img src="/New York Page/Images/Points of interest/Brooklyn Bridge.jpg" alt="Brooklyn Bridge">
+                        <div class="slide-contentPoI">
+                            <h1>Brooklyn Bridge</h1>
+                            <p>New York, NY 10038, United States</p>
+                        </div>
+                    </div>
+
+                    <div class="slidePoI">
+                        <img src="/New York Page/Images/Points of interest/Central Park.jpg" alt="Central Park">
+                        <div class="slide-contentPoI">
+                            <h1>Central Park</h1>
+                            <p>Between the Upper West Side and Upper East Side neighborhoods of Manhattan</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <button class="prevBtnPoI" id="prevBtnPoI">Previous</button>
+            <button class="nextBtnPoI" id="nextBtnPoI">Next</button>
+
+        </div>
+
+        <hr>
+
+        <!-- What to Vist -->
+        <h1 class="WtV-title">What to Visit</h1>
+        <div class="WtV-container">
+
+            <div class="WtV_slider-container">
+
+                <div class="sliderWtV">
+
+                    <div class="slideWtV">
+                        <img src="/New York Page/Images/What to visit/Empire State Building.jpg"
+                            alt="Empire State Building">
+                        <div class="slide-contentWtV">
+                            <h1>Empire State Building</h1>
+                            <p>20 W 34th St., New York, NY 10001, United States</p>
+                        </div>
+                    </div>
+
+                    <div class="slideWtV">
+                        <img src="/New York Page/Images/What to visit/Statue of Liberty.jpg" alt="Statue of Liberty">
+                        <div class="slide-contentWtV">
+                            <h1>Statue of Liberty</h1>
+                            <p>New York, NY 10004, United States</p>
+                        </div>
+                    </div>
+
+                    <div class="slideWtV">
+                        <img src="/New York Page/Images/What to visit/The National 911 Memorial Museum.jpg"
+                            alt="9/11 Memorial & Museum">
+                        <div class="slide-contentWtV">
+                            <h1>9/11 Memorial & Museum</h1>
+                            <p>180 Greenwich St, New York, NY 10007, United States</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <button class="prevBtnWtV" id="prevBtnWtV">Previous</button>
+            <button class="nextBtnWtV" id="nextBtnWtV">Next</button>
+
+        </div>
+
+        <hr>
+
+        <!-- Where to eat -->
+        <h1 class="WtE-title">Where to Eat</h1>
+
+        <div class="WtE-container">
+
+            <!-- Club A Steakhouse -->
+            <div class="clubasteakhouse-container">
+                <img src="/New York Page/Images/Where to eat/Club A Steakhouse.jpg" alt="Club A Steakhouse">
+                <h1>Club A Steakhouse</h1>
+
+                <div class="clubasteakhouse-rating">
+                    <a href="https://www.tripadvisor.com/Restaurant_Review-g60763-d1236281-Reviews-Club_A_Steakhouse-New_York_City_New_York.html"
+                        target="_blank">
+                        <button class="tripadvisor-btn">
+                            <img src="https://img.icons8.com/color/48/tripadvisor.png" alt="tripadvisorIcon" />
+                        </button>
+                    </a>
+                </div>
+                <p>€€€ - €€€€ American, Steakhouse, Gluten Free Options</p>
+                <p>
+                    <img class="map-icon" src="https://img.icons8.com/material-outlined/24/384469/place-marker--v2.png"
+                        alt="place-marker--v2" />
+                    240 E 58th St, New York City, NY 10022-2001
+                </p>
+
+                <p>
+                    <img class="phone-icon" src="https://img.icons8.com/ios-filled/50/384469/ringer-volume.png"
+                        alt="ringer-volume" />
+                    +1 212-688-4190
+                </p>
+            </div>
+
+            <!-- Dinosaur Bar-B-Que -->
+            <div class="dinosaurbbq-container">
+                <img src="/New York Page/Images/Where to eat/Dinosaur Bar-B-Que.jpg" alt="Dinosaur Bar-B-Que">
+                <h1>Dinosaur Bar-B-Que</h1>
+
+                <div class="dinosaurbbq-rating">
+                    <a href="https://www.tripadvisor.com/Restaurant_Review-g60763-d620401-Reviews-Dinosaur_Bar_B_Que-New_York_City_New_York.html"
+                        target="_blank">
+                        <button class="tripadvisor-btn">
+                            <img width="48" height="48" src="https://img.icons8.com/color/48/tripadvisor.png"
+                                alt="tripadvisorIcon" />
+                        </button>
+                    </a>
+                </div>
+                <p>€€ - €€€ American, Bar, Barbecue</p>
+                <p>
+                    <img class="map-icon" src="https://img.icons8.com/material-outlined/24/384469/place-marker--v2.png"
+                        alt="place-marker--v2" />
+                    700 W 125th St, New York City, NY 10027
+                </p>
+
+                <p>
+                    <img class="phone-icon" src="https://img.icons8.com/ios-filled/50/384469/ringer-volume.png"
+                        alt="ringer-volume" />
+                    +1 212-694-1777
+                </p>
+            </div>
+
+            <!-- Olio E Più -->
+            <div class="olioepiu-container">
+                <img src="/New York Page/Images/Where to eat/Olio E Più.jpg" alt="Olio E Più">
+                <h1>Olio E Più</h1>
+
+                <div class="olioepiu-rating">
+                    <a href="https://www.tripadvisor.com/Restaurant_Review-g60763-d1878682-Reviews-Olio_E_Piu-New_York_City_New_York.html"
+                        target="_blank">
+                        <button class="tripadvisor-btn">
+                            <img width="48" height="48" src="https://img.icons8.com/color/48/tripadvisor.png"
+                                alt="tripadvisorIcon" />
+                        </button>
+                    </a>
+                </div>
+                <p>€€ - €€€ Italian, Pizza, Vegetarian Friendly</p>
+                <p>
+                    <img class="map-icon" src="https://img.icons8.com/material-outlined/24/384469/place-marker--v2.png"
+                        alt="place-marker--v2" />
+                    3 Greenwich Ave, New York City, NY 10014
+                </p>
+
+                <p>
+                    <img class="phone-icon" src="https://img.icons8.com/ios-filled/50/384469/ringer-volume.png"
+                        alt="ringer-volume" />
+                    +1 212-243-6546
+                </p>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <!-- Where to sleep -->
+        <h1 class="WtS-title">Where to Sleep</h1>
+
+        <div class="WtS-container">
+
+            <!-- Margaritaville Resort Times Square -->
+            <div class="margaritavilleresort-container">
+                <img src="/New York Page/Images/Where to sleep/Margaritaville Resort Times Square.jpg"
+                    alt="Margaritaville Resort Times Square">
+                <div class="margaritavilleresort-text-container">
+                    <h2 class="h2-stars">&#9733 &#9733 &#9733 &#9733</h2>
+                    <h1>Margaritaville Resort Times Square</h1>
+
+                    <div class="margaritavilleresort-rating">
+                        <a href="https://www.tripadvisor.com/Hotel_Review-g60763-d23462501-Reviews-Margaritaville_Resort_Times_Square-New_York_City_New_York.html"
+                            target="_blank">
+                            <button class="tripadvisor-btn">
+                                <img class="tripadvisor-icon" src="https://img.icons8.com/color/48/tripadvisor.png"
+                                    alt="tripadvisorIcon" />
+                            </button>
+                        </a>
+                    </div>
+                    <p>5.0 Excellent</p>
+                    <p>
+                        <img class="map-icon"
+                            src="https://img.icons8.com/material-outlined/24/384469/place-marker--v2.png"
+                            alt="place-marker--v2" />
+                        560 7th Ave, New York City, NY 10018
+                    </p>
+
+                    <p>
+                        <img class="phone-icon" src="https://img.icons8.com/ios-filled/50/384469/ringer-volume.png"
+                            alt="ringer-volume" />
+                        +1 212-221-3007
+                    </p>
+
+                    <a href="https://www.margaritavilleresorts.com/margaritaville-resort-times-square" target="_blank">
+                        <button class="ReserveBTN">Reserve Now</button>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Moxy NYC Times Square -->
+            <div class="moxynyc-container">
+                <img src="/New York Page/Images/Where to sleep/Moxy NYC Times Square.jpg" alt="Moxy NYC Times Square">
+                <div class="moxynyc-text-container">
+                    <h2 class="h2-stars">&#9733 &#9733 &#9733 &#9733</h2>
+                    <h1>Moxy NYC Times Square</h1>
+
+                    <div class="moxynyc-rating">
+                        <a href="https://www.tripadvisor.com/Hotel_Review-g60763-d12301470-Reviews-Moxy_NYC_Times_Square-New_York_City_New_York.html"
+                            target="_blank">
+                            <button class="tripadvisor-btn">
+                                <img class="tripadvisor-icon" src="https://img.icons8.com/color/48/tripadvisor.png"
+                                    alt="tripadvisorIcon" />
+                            </button>
+                        </a>
+                    </div>
+                    <p>4.0 Very good</p>
+                    <p>
+                        <img class="map-icon"
+                            src="https://img.icons8.com/material-outlined/24/384469/place-marker--v2.png"
+                            alt="place-marker--v2" />
+                        485 7th Avenue, New York City, NY 10018-6804
+                    </p>
+
+                    <p>
+                        <img class="phone-icon" src="https://img.icons8.com/ios-filled/50/384469/ringer-volume.png"
+                            alt="ringer-volume" />
+                        +1 212-967-6699
+                    </p>
+
+                    <a href="https://moxytimessquare.com/" target="_blank">
+                        <button class="ReserveBTN">Reserve Now</button>
+                    </a>
+                </div>
+            </div>
+
+            <!-- The Plaza New York -->
+            <div class="theplazanyc-container">
+                <img src="/New York Page/Images/Where to sleep/The Plaza New York - A Fairmont Managed Hotel.jpg"
+                    alt="The Plaza New York">
+                <div class="theplazanyc-text-container">
+                    <h2 class="h2-stars">&#9733 &#9733 &#9733 &#9733 &#9733</h2>
+                    <h1>The Plaza New York - A Fairmont Managed Hotel</h1>
+
+                    <div class="theplazanyc-rating">
+                        <a href="https://www.tripadvisor.com/Hotel_Review-g60763-d675616-Reviews-The_Plaza_New_York_A_Fairmont_Managed_Hotel-New_York_City_New_York.html"
+                            target="_blank">
+                            <button class="tripadvisor-btn">
+                                <img class="tripadvisor-icon" src="https://img.icons8.com/color/48/tripadvisor.png"
+                                    alt="tripadvisorIcon" />
+                            </button>
+                        </a>
+                    </div>
+                    <p>4.5 Excellent</p>
+                    <p>
+                        <img class="map-icon"
+                            src="https://img.icons8.com/material-outlined/24/384469/place-marker--v2.png"
+                            alt="place-marker--v2" />
+                        768 Fifth Avenue, New York City, NY 10019
+                    </p>
+
+                    <p>
+                        <img class="phone-icon" src="https://img.icons8.com/ios-filled/50/384469/ringer-volume.png"
+                            alt="ringer-volume" />
+                        +1 646-663-4630
+                    </p>
+
+                    <a href="https://www.fairmont.com/the-plaza-new-york/" target="_blank">
+                        <button class="ReserveBTN">Reserve Now</button>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- Scroll to top BTN -->
+        <button class="up-arrow-btn" onclick="scrollToTop()">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24" width="18" viewBox="0 0 384 512">
+                <path
+                    d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160"
+                    fill="#384469" />
+            </svg>
+        </button>
+
+
+        <!-- Footer -->
+        <footer class="footer-TE">
+            <div class="footer-conteudo">
+                <div class="footer-socials">
+                    <div class="footerlogo-container">
+                        <img src="/Images/Travel Enthusiasts 1.png" alt="Logo TE 1">
+                    </div>
+                    <div class="socials-container">
+                        <a href="https://www.instagram.com/_te2023_/" target="_blank">
+                            <img class="insta" src="/Images/icons/instagram.png" alt="Instagram">
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCZZ5yRaYqaW_PMWc9VqOu4g" target="_blank">
+                            <img class="youtube" src="/Images/icons/youtube.png" alt="Twitter">
+                        </a>
+                        <a href="https://www.facebook.com/"> <!-- Alterar links -->
+                            <img class="facebook" src="/Images/icons/facebook.png" alt="Facebook">
+                        </a>
+                    </div>
+                    <h6 class="rights-reservedTXT">© 2023 Travel Enthusiasts. All rights reserved.</h6>
+                </div>
+
+                <div class="vertical-line1"></div>
+
+                <h6 class="newsletter-txt">Newsletter</h6>
+                <div class="newsletter-container">
+                    <form action="URL_DO_SEU_FORMULARIO_MAILCHIMP" method="post"> <!-- usar Mailchimp -->
+                        <input type="emailInput" id="newsletterInputTxt" name="email" placeholder="Enter your email"
+                            required>
+                        <button type="subBtn">Subscribe</button>
+                    </form>
+                </div>
+
+                <div class="vertical-line2"></div>
+
+                <div class="contacts-container">
+                    <a href="/Contact us page/contactus.html">
+                        <h6 class="containerTxt-1">Contact Us</h6>
+                    </a>
+                    <a href="/Terms of Service page/termsofservice.html">
+                        <h6 class="containerTxt-2">Terms of Service</h6>
+                    </a>
+                    <a href="/Privacy Policy page/privacypolicy.html">
+                        <h6 class="containerTxt-3">Privacy Policy</h6>
+                    </a>
+                </div>
+
+            </div>
+        </footer>
+
+    </main>
+
+    <script src="/New York Page/newyorkscripts.js"></script>
+</body>
+
+</html>

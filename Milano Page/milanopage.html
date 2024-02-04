@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Milano</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@300;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/Milano Page/milanostyle.css" />
+</head>
+
+<body>
+
+    <div class="landing-container" id="landing-section">
+        <div class="landing-image"></div>
+        <div class="landing-layer1"></div>
+
+        <button class="scroll-button" onclick="scrollToMain()">
+            <svg class="arrows">
+                <path class="a1" d="M0 0 L30 32 L60 0"></path>
+                <path class="a2" d="M0 20 L30 52 L60 20"></path>
+                <path class="a3" d="M0 40 L30 72 L60 40"></path>
+            </svg>
+        </button>
+
+    </div>
+
+    <main id="main">
+        <nav class="navbar" id="navbar">
+            <a class="navbarlogo-container" href="/Home page/index.html">
+                <img id="nav-logo" src="/Images/Travel Enthusiasts 2 PEQUENO.png" alt="TravelEnthusiasts" />
+            </a>
+            <div class="menudropdown-container">
+                <div class="menu-links" id="menu-links">
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="20" width="17.5" viewBox="0 0 448 512">
+                                <path fill="#ffffff"
+                                    d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+                            </svg>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="/Home page/index.html">Home</a>
+                            <a href="/Destinations page/destinations.html">Destinations</a>
+                            <a href="/Recommended Website page/recommendedwebsite.html">Recommended Websites</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Conteudo da pagina -->
+
+        <!-- btns -->
+        <div class="btns-container">
+            <button class="btns" id="PoIbtn">Points of interest</button>
+            <button class="btns" id="WtVbtn">What to visit</button>
+            <button class="btns" id="WtEbtn">Where to eat</button>
+            <button class="btns" id="WtSbtn">Where to sleep</button>
+        </div>
+
+        <hr>
+
+        <!-- inicio do conteudo -->
+        <h1 class="milano-title">WHY MILANO?</h1>
+        <p class="milano-description">
+            Milan, a cosmopolitan gem in Italy, lures tourists with its blend of fashion, culture, and history. <br>
+            Recognized as the Italian fashion capital, Milan boasts landmarks such as the Milan Cathedral and the <br>
+            Galleria Vittorio Emanuele II. <br>
+            Furthermore, its sophisticated restaurants, designer boutiques, and vibrant artistic scene make it a <br>
+            must-visit destination for those seeking an urban and elegant experience in Europe. <br>
+        </p>
+
+        <hr>
+
+        <div class="milano_wallpaper-container">
+            <img class="milano-wallpaper2" src="/Milano Page/Images/Milano Wallpaper 2.jpg" alt="Porto">
+        </div>
+
+        <hr>
+
+        <!-- Points of Interest -->
+        <h1 class="PoI-title">Points of Interest</h1>
+        <div class="PoI-container">
+
+            <div class="PoI_slider-container">
+
+                <div class="sliderPoI">
+
+                    <div class="slidePoI">
+                        <img src="/Milano Page/Images/Points of interest/Brera District.jpg" alt="Brera District">
+                        <div class="slide-contentPoI">
+                            <h1>Brera District</h1>
+                            <p>20121 Milan, Metropolitan City of Milan, Italy</p>
+                        </div>
+                    </div>
+
+                    <div class="slidePoI">
+                        <img src="/Milano Page/Images/Points of interest/Galleria Vittorio Emanuele II.jpg"
+                            alt="Galleria Vittorio Emanuele II">
+                        <div class="slide-contentPoI">
+                            <h1>Galleria Vittorio Emanuele II</h1>
+                            <p>P.za del Duomo, 20123 Milano MI, Italy</p>
+                        </div>
+                    </div>
+
+                    <div class="slidePoI">
+                        <img src="/Milano Page/Images/Points of interest/I Navigli di Milano.jpg"
+                            alt="I Navigli di Milano">
+                        <div class="slide-contentPoI">
+                            <h1>I Navigli di Milano</h1>
+                            <p> Via Edmondo de Amicis, 22, 20123 Milano, Italy</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <button class="prevBtnPoI" id="prevBtnPoI">Previous</button>
+            <button class="nextBtnPoI" id="nextBtnPoI">Next</button>
+
+        </div>
+
+        <hr>
+
+        <!-- What to Vist -->
+        <h1 class="WtV-title">What to Visit</h1>
+        <div class="WtV-container">
+
+            <div class="WtV_slider-container">
+
+                <div class="sliderWtV">
+
+                    <div class="slideWtV">
+                        <img src="/Milano Page/Images/What to visit/Duomo di Milano.jpg" alt="Duomo di Milano">
+                        <div class="slide-contentWtV">
+                            <h1>Duomo di Milano</h1>
+                            <p>P.za del Duomo, 20122 Milano MI, Italy</p>
+                        </div>
+                    </div>
+
+                    <div class="slideWtV">
+                        <img src="/Milano Page/Images/What to visit/Stadio Giuseppe Meazza (San Siro).jpg"
+                            alt="San Siro">
+                        <div class="slide-contentWtV">
+                            <h1>Stadio Giuseppe Meazza (San Siro)</h1>
+                            <p>Piazzale Angelo Moratti, 20151 Milano MI, Italy</p>
+                        </div>
+                    </div>
+
+                    <div class="slideWtV">
+                        <img src="/Milano Page/Images/What to visit/Pinacoteca di Brera.jpg" alt="Pinacoteca di Brera">
+                        <div class="slide-contentWtV">
+                            <h1>Pinacoteca di Brera</h1>
+                            <p>Via Brera, 28, 20121 Milano MI, Italy</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <button class="prevBtnWtV" id="prevBtnWtV">Previous</button>
+            <button class="nextBtnWtV" id="nextBtnWtV">Next</button>
+
+        </div>
+
+        <hr>
+
+        <!-- Where to eat -->
+        <h1 class="WtE-title">Where to Eat</h1>
+
+        <div class="WtE-container">
+
+            <!-- Cantiere Hambirreria - Milano -->
+            <div class="cantierehambirreria-container">
+                <img src="/Milano Page/Images/Where to eat/Cantiere Hambirreria - Milano.jpg"
+                    alt="Cantiere Hambirreria - Milano">
+                <h1>Cantiere Hambirreria - Milano</h1>
+
+                <div class="cantierehambirreria-rating">
+                    <a href="https://www.tripadvisor.com/Restaurant_Review-g187849-d23920089-Reviews-Cantiere_Hambirreria_Milano-Milan_Lombardy.html"
+                        target="_blank">
+                        <button class="tripadvisor-btn">
+                            <img src="https://img.icons8.com/color/48/tripadvisor.png" alt="tripadvisorIcon" />
+                        </button>
+                    </a>
+                </div>
+                <p>€€ - €€€ Italian, American, Brew Pub</p>
+                <p>
+                    <img class="map-icon" src="https://img.icons8.com/material-outlined/24/384469/place-marker--v2.png"
+                        alt="place-marker--v2" />
+                    Corso Giuseppe Garibaldi 111, 20121 Milan Italy
+                </p>
+
+                <p>
+                    <img class="phone-icon" src="https://img.icons8.com/ios-filled/50/384469/ringer-volume.png"
+                        alt="ringer-volume" />
+                    +39 389 655 5544
+                </p>
+            </div>
+
+            <!-- Cantine Milano -->
+            <div class="cantinemilano-container">
+                <img src="/Milano Page/Images/Where to eat/Cantine Milano.jpg" alt="Cantine Milano">
+                <h1>Cantine Milano</h1>
+
+                <div class="cantinemilano-rating">
+                    <a href="https://www.tripadvisor.com/Restaurant_Review-g187849-d12479650-Reviews-Cantine_Milano-Milan_Lombardy.html"
+                        target="_blank">
+                        <button class="tripadvisor-btn">
+                            <img width="48" height="48" src="https://img.icons8.com/color/48/tripadvisor.png"
+                                alt="tripadvisorIcon" />
+                        </button>
+                    </a>
+                </div>
+                <p>€€€ - €€€€ Italian, Mediterranean, Grill</p>
+                <p>
+                    <img class="map-icon" src="https://img.icons8.com/material-outlined/24/384469/place-marker--v2.png"
+                        alt="place-marker--v2" />
+                    Via Trau' 1 Tra Piazzale Lagosta e Piazzale Segrino, 20159 Milan Italy
+                </p>
+
+                <p>
+                    <img class="phone-icon" src="https://img.icons8.com/ios-filled/50/384469/ringer-volume.png"
+                        alt="ringer-volume" />
+                    +39 02 6680 2819
+                </p>
+            </div>
+
+            <!-- Marea Seafood & Beverage -->
+            <div class="mareaseafood-container">
+                <img src="/Milano Page/Images/Where to eat/Marea Seafood & Beverage.jpg" alt="Marea Seafood & Beverage">
+                <h1>Marea Seafood & Beverage</h1>
+
+                <div class="mareaseafood-rating">
+                    <a href="https://www.tripadvisor.com/Restaurant_Review-g187849-d23650099-Reviews-Marea_Seafood_Beverage-Milan_Lombardy.html"
+                        target="_blank">
+                        <button class="tripadvisor-btn">
+                            <img width="48" height="48" src="https://img.icons8.com/color/48/tripadvisor.png"
+                                alt="tripadvisorIcon" />
+                        </button>
+                    </a>
+                </div>
+                <p>€€ - €€€ Italian, Seafood, International</p>
+                <p>
+                    <img class="map-icon" src="https://img.icons8.com/material-outlined/24/384469/place-marker--v2.png"
+                        alt="place-marker--v2" />
+                    Via Papa Gregorio XIV 16, 20123 Milan Italy
+                </p>
+
+                <p>
+                    <img class="phone-icon" src="https://img.icons8.com/ios-filled/50/384469/ringer-volume.png"
+                        alt="ringer-volume" />
+                    +39 02 8457 0315
+                </p>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <!-- Where to sleep -->
+        <h1 class="WtS-title">Where to Sleep</h1>
+
+        <div class="WtS-container">
+
+            <!-- Hotel Spadari Al Duomo -->
+            <div class="hotelspadarialduomo-container">
+                <img src="/Milano Page/Images/Where to sleep/Hotel Spadari Al Duomo.jpg" alt="Hotel Spadari Al Duomo">
+                <div class="hotelspadarialduomo-text-container">
+                    <h2 class="h2-stars">&#9733 &#9733 &#9733 &#9733</h2>
+                    <h1>Hotel Spadari Al Duomo</h1>
+
+                    <div class="hotelspadarialduomo-rating">
+                        <a href="https://www.tripadvisor.com/Hotel_Review-g187849-d194976-Reviews-Hotel_Spadari_Al_Duomo-Milan_Lombardy.html"
+                            target="_blank">
+                            <button class="tripadvisor-btn">
+                                <img class="tripadvisor-icon" src="https://img.icons8.com/color/48/tripadvisor.png"
+                                    alt="tripadvisorIcon" />
+                            </button>
+                        </a>
+                    </div>
+                    <p>5.0 Excellent</p>
+                    <p>
+                        <img class="map-icon"
+                            src="https://img.icons8.com/material-outlined/24/384469/place-marker--v2.png"
+                            alt="place-marker--v2" />
+                        Via Spadari,11, 20123 Milan Italy
+                    </p>
+
+                    <p>
+                        <img class="phone-icon" src="https://img.icons8.com/ios-filled/50/384469/ringer-volume.png"
+                            alt="ringer-volume" />
+                        +39 02 7200 2371
+                    </p>
+
+                    <a href="https://reservations.verticalbooking.com//premium/index.html?id_stile=19410&lingua_int=eng&id_albergo=4525&dc=486"
+                        target="_blank">
+                        <button class="ReserveBTN">Reserve Now</button>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Lancaster Hotel -->
+            <div class="lancasterhotel-container">
+                <img src="/Milano Page/Images/Where to sleep/Lancaster Hotel.jpg" alt="Lancaster Hotel">
+                <div class="lancasterhotel-text-container">
+                    <h2 class="h2-stars">&#9733 &#9733 &#9733 &#9733 &#9733</h2>
+                    <h1>Lancaster Hotel</h1>
+
+                    <div class="lancasterhotel-rating">
+                        <a href="https://www.tripadvisor.com/Hotel_Review-g187849-d237325-Reviews-Lancaster_Hotel-Milan_Lombardy.html"
+                            target="_blank">
+                            <button class="tripadvisor-btn">
+                                <img class="tripadvisor-icon" src="https://img.icons8.com/color/48/tripadvisor.png"
+                                    alt="tripadvisorIcon" />
+                            </button>
+                        </a>
+                    </div>
+                    <p>4.5 Excellent</p>
+                    <p>
+                        <img class="map-icon"
+                            src="https://img.icons8.com/material-outlined/24/384469/place-marker--v2.png"
+                            alt="place-marker--v2" />
+                        Via Abbondio Sangiorgio 16, 20145 Milan Italy
+                    </p>
+
+                    <p>
+                        <img class="phone-icon" src="https://img.icons8.com/ios-filled/50/384469/ringer-volume.png"
+                            alt="ringer-volume" />
+                        +39 02 344705
+                    </p>
+
+                    <a href="https://www.hotel-lancaster.com/en/" target="_blank">
+                        <button class="ReserveBTN">Reserve Now</button>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Crowne Plaza Milan City -->
+            <div class="crowneplazamilan-container">
+                <img src="/Milano Page/Images/Where to sleep/Crowne Plaza Milan City, an IHG hotel.jpg"
+                    alt="Crowne Plaza Milan">
+                <div class="crowneplazamilan-text-container">
+                    <h2 class="h2-stars">&#9733 &#9733 &#9733 &#9733</h2>
+                    <h1>Crowne Plaza Milan City</h1>
+
+                    <div class="crowneplazamilan-rating">
+                        <a href="https://www.tripadvisor.com/Hotel_Review-g187849-d1027179-Reviews-Crowne_Plaza_Milan_City_an_IHG_hotel-Milan_Lombardy.html"
+                            target="_blank">
+                            <button class="tripadvisor-btn">
+                                <img class="tripadvisor-icon" src="https://img.icons8.com/color/48/tripadvisor.png"
+                                    alt="tripadvisorIcon" />
+                            </button>
+                        </a>
+                    </div>
+                    <p>4.5 Excellent</p>
+                    <p>
+                        <img class="map-icon"
+                            src="https://img.icons8.com/material-outlined/24/384469/place-marker--v2.png"
+                            alt="place-marker--v2" />
+                        Via Melchiorre Gioia 73, 20124 Milan Italy
+                    </p>
+
+                    <p>
+                        <img class="phone-icon" src="https://img.icons8.com/ios-filled/50/384469/ringer-volume.png"
+                            alt="ringer-volume" />
+                        + 1 877 859 5095
+                    </p>
+
+                    <a href="https://www.ihg.com/crowneplaza/hotels/us/en/milan/milcc/hoteldetail" target="_blank">
+                        <button class="ReserveBTN">Reserve Now</button>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- Scroll to top BTN -->
+        <button class="up-arrow-btn" onclick="scrollToTop()">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24" width="18" viewBox="0 0 384 512">
+                <path
+                    d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160"
+                    fill="#384469" />
+            </svg>
+        </button>
+
+
+        <!-- Footer -->
+        <footer class="footer-TE">
+            <div class="footer-conteudo">
+                <div class="footer-socials">
+                    <div class="footerlogo-container">
+                        <img src="/Images/Travel Enthusiasts 1.png" alt="Logo TE 1">
+                    </div>
+                    <div class="socials-container">
+                        <a href="https://www.instagram.com/_te2023_/" target="_blank">
+                            <img class="insta" src="/Images/icons/instagram.png" alt="Instagram">
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCZZ5yRaYqaW_PMWc9VqOu4g" target="_blank">
+                            <img class="youtube" src="/Images/icons/youtube.png" alt="Twitter">
+                        </a>
+                        <a href="https://www.facebook.com/"> <!-- Alterar links -->
+                            <img class="facebook" src="/Images/icons/facebook.png" alt="Facebook">
+                        </a>
+                    </div>
+                    <h6 class="rights-reservedTXT">© 2023 Travel Enthusiasts. All rights reserved.</h6>
+                </div>
+
+                <div class="vertical-line1"></div>
+
+                <h6 class="newsletter-txt">Newsletter</h6>
+                <div class="newsletter-container">
+                    <form action="URL_DO_SEU_FORMULARIO_MAILCHIMP" method="post"> <!-- usar Mailchimp -->
+                        <input type="emailInput" id="newsletterInputTxt" name="email" placeholder="Enter your email"
+                            required>
+                        <button type="subBtn">Subscribe</button>
+                    </form>
+                </div>
+
+                <div class="vertical-line2"></div>
+
+                <div class="contacts-container">
+                    <a href="/Contact us page/contactus.html">
+                        <h6 class="containerTxt-1">Contact Us</h6>
+                    </a>
+                    <a href="/Terms of Service page/termsofservice.html">
+                        <h6 class="containerTxt-2">Terms of Service</h6>
+                    </a>
+                    <a href="/Privacy Policy page/privacypolicy.html">
+                        <h6 class="containerTxt-3">Privacy Policy</h6>
+                    </a>
+                </div>
+
+            </div>
+        </footer>
+
+    </main>
+
+    <script src="/Milano Page/milanoscipts.js"></script>
+</body>
+
+</html>

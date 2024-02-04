@@ -45,7 +45,7 @@ top: 0;
 left: 0;
 width: 100%;
 height: 100%;
-background-image: url('/Images/Destinos/New\ York\ wallpaper\ dark.png');
+background-image: url('/Images/Destinos/Paris\ Wallpaper\ dark.png');
 background-position: center;
 background-size: cover;
 z-index: 0;
@@ -57,7 +57,7 @@ top: -17px;
 left: 0;
 width: 100%;
 height: 100%;
-background-image: url('destinos_New\ York.png');
+background-image: url('destinos_Paris.png');
 background-size: cover;
 opacity: 1;
 }
@@ -232,8 +232,8 @@ margin-top: 20px;
 box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.400);
 }
 
-/* WHY PORTO? title */
-.porto-title {
+/* WHY paris? title */
+.paris-title {
 font-family:'Spectral', serif;
 font-style: italic;
 font-size: 20px;
@@ -243,7 +243,7 @@ justify-content: center;
 margin-top: 50px;
 }
 
-.porto-description {
+.paris-description {
 font-family:'Spectral', serif;
 font-style: normal;
 font-size: 30px;
@@ -254,7 +254,7 @@ text-align: center;
 }
 
 /* Wallpaper 2 */
-.porto_wallpaper-container {
+.paris_wallpaper-container {
 display: flex;
 justify-content: center;
 align-items: center;
@@ -262,7 +262,7 @@ margin-top: 70px;
 margin-bottom: 70px;
 }
 
-.porto-wallpaper2 {
+.paris-wallpaper2 {
 width: 1338px;
 height: 725px;
 } 
@@ -526,7 +526,7 @@ align-items: center;
 margin: 0 50px;
 }
 
-.clubasteakhouse-container { /* Club A Steakhouse Container */
+.bistrotinstinct-container { /* Bistrot Instinct */
 box-shadow: 5px 5px 15px #857c69d3;
 border-radius: 8px;
 max-width: 500px;
@@ -537,16 +537,16 @@ background-color: #ffffff;
 transition: transform 0.3s ease-in-out;
 }
 
-.clubasteakhouse-container:hover {
+.bistrotinstinct-container:hover {
 transform: scale(1.02);
 }
 
-.clubasteakhouse-container img {
+.bistrotinstinct-container img {
 width: 100%;
 border-radius: 8px 8px 0 0;
 }
 
-.clubasteakhouse-container h1 {
+.bistrotinstinct-container h1 {
 font-family:'Spectral', serif;
 font-style: italic;
 font-weight: 600;
@@ -556,7 +556,7 @@ margin: 10px 0;
 text-align: center;
 }
 
-.clubasteakhouse-rating {
+.bistrotinstinct-rating {
 margin-bottom: 10px;
 display: flex;
 align-items: center;
@@ -575,80 +575,7 @@ height: 50px;
 width: auto;
 }
 
-.clubasteakhouse-container p {
-font-family:'Spectral', serif;
-font-weight: 500;
-font-size: 20px;
-color: #384469;
-margin: 10px 0;
-text-align: center;
-}
-
-.map-icon {
-width: auto !important;
-height: 24px;
-margin-right: 5px;
-margin-bottom: -3px;
-}
-
-.phone-icon {
-width: auto !important;
-height: 24px;
-margin-right: 5px;
-margin-bottom: -3px;
-}
-
-.dinosaurbbq-container { /* Dinosaur Bar-B-Que Container */
-box-shadow: 5px 5px 15px #857c69d3;
-border-radius: 8px;
-max-width: 500px;
-max-height: 800px;
-margin-left: 100px;
-padding: 15px;
-margin-bottom: 20px;
-background-color: #ffffff;
-transition: transform 0.3s ease-in-out;
-}
-
-.dinosaurbbq-container:hover {
-transform: scale(1.02);
-}
-
-.dinosaurbbq-container img {
-width: 100%;
-border-radius: 8px 8px 0 0;
-}
-
-.dinosaurbbq-container h1 {
-font-family:'Spectral', serif;
-font-style: italic;
-font-weight: 600;
-font-size: 30px;
-color: #384469;
-margin: 10px 0;
-text-align: center;
-}
-
-.dinosaurbbq-rating {
-margin-bottom: 10px;
-display: flex;
-align-items: center;
-justify-content: center;
-}
-
-.tripadvisor-btn {
-cursor: pointer;
-background-color: transparent;
-border: none;
-margin-top: -10px;
-}
-
-.tripadvidor-icon {
-height: 50px;
-width: auto;
-}
-
-.dinosaurbbq-container p {
+.bistrotinstinct-container p {
 font-family:'Spectral', serif;
 font-weight: 500;
 font-size: 25px;
@@ -671,27 +598,28 @@ margin-right: 5px;
 margin-bottom: -3px;
 }
 
-.olioepiu-container { /* Olio E Più Container */
+.habile-container { /* HABILE. Container */
 box-shadow: 5px 5px 15px #857c69d3;
 border-radius: 8px;
 max-width: 500px;
 max-height: 800px;
 margin-left: 100px;
 padding: 15px;
+margin-bottom: 20px;
 background-color: #ffffff;
 transition: transform 0.3s ease-in-out;
 }
 
-.olioepiu-container:hover {
+.habile-container:hover {
 transform: scale(1.02);
 }
 
-.olioepiu-container img {
+.habile-container img {
 width: 100%;
 border-radius: 8px 8px 0 0;
 }
 
-.olioepiu-container h1 {
+.habile-container h1 {
 font-family:'Spectral', serif;
 font-style: italic;
 font-weight: 600;
@@ -701,7 +629,7 @@ margin: 10px 0;
 text-align: center;
 }
 
-.olioepiu-rating {
+.habile-rating {
 margin-bottom: 10px;
 display: flex;
 align-items: center;
@@ -720,7 +648,79 @@ height: 50px;
 width: auto;
 }
 
-.olioepiu-container p {
+.habile-container p {
+font-family:'Spectral', serif;
+font-weight: 500;
+font-size: 25px;
+color: #384469;
+margin: 10px 0;
+text-align: center;
+}
+
+.map-icon {
+width: auto !important;
+height: 24px;
+margin-right: 5px;
+margin-bottom: -3px;
+}
+
+.phone-icon {
+width: auto !important;
+height: 24px;
+margin-right: 5px;
+margin-bottom: -3px;
+}
+
+.iletaitunsquare-container { /* Il était un square Container */
+box-shadow: 5px 5px 15px #857c69d3;
+border-radius: 8px;
+max-width: 500px;
+max-height: 800px;
+margin-left: 100px;
+padding: 15px;
+background-color: #ffffff;
+transition: transform 0.3s ease-in-out;
+}
+
+.iletaitunsquare-container:hover {
+transform: scale(1.02);
+}
+
+.iletaitunsquare-container img {
+width: 100%;
+border-radius: 8px 8px 0 0;
+}
+
+.iletaitunsquare-container h1 {
+font-family:'Spectral', serif;
+font-style: italic;
+font-weight: 600;
+font-size: 30px;
+color: #384469;
+margin: 10px 0;
+text-align: center;
+}
+
+.iletaitunsquare-rating {
+margin-bottom: 10px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.tripadvisor-btn {
+cursor: pointer;
+background-color: transparent;
+border: none;
+margin-top: -10px;
+}
+
+.tripadvidor-icon {
+height: 50px;
+width: auto;
+}
+
+.iletaitunsquare-container p {
 font-family:'Spectral', serif;
 font-weight: 500;
 font-size: 25px;
@@ -765,8 +765,8 @@ flex-direction: column;
 gap: 50px;
 }
 
-/*Margaritaville Resort Times Square*/
-.margaritavilleresort-container {
+/*Hôtel Astra Opéra - Astotel*/
+.hotelastraopera-container {
 background-color: #ffffff;
 border-radius: 8px;
 width: 85%;
@@ -775,16 +775,16 @@ box-shadow: 5px 5px 15px #857c69d3;
 transition: transform 0.3s ease-in-out;
 }
 
-.margaritavilleresort-container:hover {
+.hotelastraopera-container:hover {
 transform: scale(1.02);
 }
 
-.margaritavilleresort-container img {
+.hotelastraopera-container img {
 width: 55%;
 border-radius: 8px 0 0 8px;
 }
 
-.margaritavilleresort-text-container {
+.hotelastraopera-text-container {
 padding: 25px;
 }
 
@@ -793,7 +793,7 @@ font-size: 20px;
 color: #384469;
 }
 
-.margaritavilleresort-text-container h1 {
+.hotelastraopera-text-container h1 {
 font-family: 'Spectral', serif;
 font-style: italic;
 font-weight: 600;
@@ -815,7 +815,7 @@ height: 70px;
 width: 70px !important;
 }
 
-.margaritavilleresort-text-container p {
+.hotelastraopera-text-container p {
 font-family: 'Spectral', serif;
 font-weight: 500;
 font-size: 30px;
@@ -845,8 +845,8 @@ color: #ffffff;
 }
 
 
-/*Moxy NYC Times Square*/
-.moxynyc-container {
+/*Hôtel Grand Powers*/
+.hotelgrandpowers-container {
 background-color: #ffffff;
 border-radius: 8px;
 width: 85%;
@@ -855,16 +855,16 @@ box-shadow: 5px 5px 15px #857c69d3;
 transition: transform 0.3s ease-in-out;
 }
 
-.moxynyc-container:hover {
+.hotelgrandpowers-container:hover {
 transform: scale(1.02);
 }
 
-.moxynyc-container img {
+.hotelgrandpowers-container img {
 width: 55%;
 border-radius: 8px 0 0 8px;
 }
 
-.moxynyc-text-container {
+.hotelgrandpowers-text-container {
 padding: 25px;
 }
 
@@ -873,7 +873,7 @@ font-size: 20px;
 color: #384469;
 }
 
-.moxynyc-text-container h1 {
+.hotelgrandpowers-text-container h1 {
 font-family: 'Spectral', serif;
 font-style: italic;
 font-weight: 600;
@@ -895,7 +895,7 @@ height: 70px;
 width: 70px !important;
 }
 
-.moxynyc-text-container p {
+.hotelgrandpowers-text-container p {
 font-family: 'Spectral', serif;
 font-weight: 500;
 font-size: 30px;
@@ -925,8 +925,8 @@ color: #ffffff;
 }
 
 
-/*The Plaza New York*/
-.theplazanyc-container {
+/*Hôtel Malte - Astotel*/
+.hotelmalteastotel-container {
 background-color: #ffffff;
 border-radius: 8px;
 width: 85%;
@@ -935,16 +935,16 @@ box-shadow: 5px 5px 15px #857c69d3;
 transition: transform 0.3s ease-in-out;
 }
 
-.theplazanyc-container:hover {
+.hotelmalteastotel-container:hover {
 transform: scale(1.02);
 }
 
-.theplazanyc-container img {
+.hotelmalteastotel-container img {
 width: 55%;
 border-radius: 8px 0 0 8px;
 }
 
-.theplazanyc-text-container {
+.hotelmalteastotel-text-container {
 padding: 25px;
 }
 
@@ -953,7 +953,7 @@ font-size: 25px;
 color: #384469;
 }
 
-.theplazanyc-text-container h1 {
+.hotelmalteastotel-text-container h1 {
 font-family: 'Spectral', serif;
 font-style: italic;
 font-weight: 600;
@@ -975,7 +975,7 @@ height: 70px;
 width: 70px !important;
 }
 
-.theplazanyc-text-container p {
+.hotelmalteastotel-text-container p {
 font-family: 'Spectral', serif;
 font-weight: 500;
 font-size: 30px;
