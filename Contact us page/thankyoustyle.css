@@ -31,7 +31,7 @@ cursor: pointer;
 /* Formulario */
 .form-container {
 width: 480px;
-height: 680px;
+height: 400px;
 background-color: #ffffff;
 box-shadow: rgba(0, 0, 0, 0.863) 0px 5px 15px;
 border-radius: 5px;
@@ -51,59 +51,25 @@ display: flex;
 justify-content: center;
 align-items: center;
 margin-top: 10px;
-margin-bottom: 10px;
 }
 
-/* Email - Nome - Message */
-.form {
-width: 100%;
+h1 {
+font-family: 'Spectral', serif;
+font-size: 33px;
+font-weight: 500;
+color: #384469;
 display: flex;
-flex-direction: column;
-gap: 18px;
-margin-top: 5px;
-margin-bottom: 15px;
+justify-content: center;
+text-align: center;
 }
 
-.input {
+h2 {
 font-family: 'Spectral', serif;
-font-style: italic;
-font-size: 20px;
-border-radius: 5px;
-border: 1px solid #384469;
-outline: 0;
-box-sizing: border-box;
-padding: 12px 15px;
+font-size: 24px;
+font-weight: 500;
+color: #384469;
+display: flex;
+justify-content: center;
+text-align: center;
 }
-
-.input2 {
-font-family: 'Spectral', serif;
-font-style: italic;
-font-size: 20px;
-border-radius: 5px;
-border: 1px solid #384469;
-height: 150px;
-outline: 0;
-box-sizing: border-box;
-padding: 12px 15px;    
-resize: none;
-}
-
-/*Send message Now Btn*/
-.send_message-btn {
-padding: 10px 15px;
-font-family: 'Spectral', serif;
-font-style: italic;
-font-size: 22px;
-border-radius: 10px;
-border: 0;
-outline: 0;
-background: #384469;
-color: white;
-cursor: pointer;
-transition: background-color 0.5s ease;
-}
-
-.send_message-btn:hover {
-background-color: #272f49;
-}
-  
+      
