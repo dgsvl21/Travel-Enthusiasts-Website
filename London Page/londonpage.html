@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>London</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@300;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/London Page/londonstyle.css" />
+</head>
+
+<body>
+
+    <div class="landing-container" id="landing-section">
+        <div class="landing-image"></div>
+        <div class="landing-layer1"></div>
+
+        <button class="scroll-button" onclick="scrollToMain()">
+            <svg class="arrows">
+                <path class="a1" d="M0 0 L30 32 L60 0"></path>
+                <path class="a2" d="M0 20 L30 52 L60 20"></path>
+                <path class="a3" d="M0 40 L30 72 L60 40"></path>
+            </svg>
+        </button>
+
+    </div>
+
+    <main id="main">
+        <nav class="navbar" id="navbar">
+            <a class="navbarlogo-container" href="/Home page/index.html">
+                <img id="nav-logo" src="/Images/Travel Enthusiasts 2 PEQUENO.png" alt="TravelEnthusiasts" />
+            </a>
+            <div class="menudropdown-container">
+                <div class="menu-links" id="menu-links">
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="20" width="17.5" viewBox="0 0 448 512">
+                                <path fill="#ffffff"
+                                    d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+                            </svg>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="/Home page/index.html">Home</a>
+                            <a href="/Destinations page/destinations.html">Destinations</a>
+                            <a href="/Recommended Website page/recommendedwebsite.html">Recommended Websites</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Conteudo da pagina -->
+
+        <!-- btns -->
+        <div class="btns-container">
+            <button class="btns" id="PoIbtn">Points of interest</button>
+            <button class="btns" id="WtVbtn">What to visit</button>
+            <button class="btns" id="WtEbtn">Where to eat</button>
+            <button class="btns" id="WtSbtn">Where to sleep</button>
+        </div>
+
+        <hr>
+
+        <!-- inicio do conteudo -->
+        <h1 class="london-title">WHY LONDON?</h1>
+        <p class="london-description">
+            London, a dynamic metropolis, is a premier choice for tourism, seamlessly blending history and modernity.
+            <br>
+            With iconic landmarks like Big Ben, the Tower of London, and Buckingham Palace, the city offers a <br>
+            captivating journey through time. <br>
+            Its diverse cultural scene, world-class museums, and vibrant neighborhoods contribute to London's appeal,
+            <br>
+            making it a must-visit destination for those seeking a rich tapestry of experiences in a global hub.
+        </p>
+
+        <hr>
+
+        <div class="london_wallpaper-container">
+            <img class="london-wallpaper2" src="/London Page/Images/London Wallpaper 2.jpg" alt="Porto">
+        </div>
+
+        <hr>
+
+        <!-- Points of Interest -->
+        <h1 class="PoI-title">Points of Interest</h1>
+        <div class="PoI-container">
+
+            <div class="PoI_slider-container">
+
+                <div class="sliderPoI">
+
+                    <div class="slidePoI">
+                        <img src="/London Page/Images/Points of interest/Big Ben.jpg" alt="Big Ben">
+                        <div class="slide-contentPoI">
+                            <h1>Big Ben</h1>
+                            <p>London SW1A 0AA, United Kingdom</p>
+                        </div>
+                    </div>
+
+                    <div class="slidePoI">
+                        <img src="/London Page/Images/Points of interest/Tower Bridge.jpg" alt="Tower Bridge">
+                        <div class="slide-contentPoI">
+                            <h1>Tower Bridge</h1>
+                            <p>Tower Bridge Rd, London SE1 2UP, United Kingdom</p>
+                        </div>
+                    </div>
+
+                    <div class="slidePoI">
+                        <img src="/London Page/Images/Points of interest/Tower of London.jpg" alt="Tower of London">
+                        <div class="slide-contentPoI">
+                            <h1>Tower of London</h1>
+                            <p>London EC3N 4AB, United Kingdom</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <button class="prevBtnPoI" id="prevBtnPoI">Previous</button>
+            <button class="nextBtnPoI" id="nextBtnPoI">Next</button>
+
+        </div>
+
+        <hr>
+
+        <!-- What to Vist -->
+        <h1 class="WtV-title">What to Visit</h1>
+        <div class="WtV-container">
+
+            <div class="WtV_slider-container">
+
+                <div class="sliderWtV">
+
+                    <div class="slideWtV">
+                        <img src="/London Page/Images/What to visit/Westminster Abbey.jpg" alt="Westminster Abbey">
+                        <div class="slide-contentWtV">
+                            <h1>Westminster Abbey</h1>
+                            <p>Dean's Yard, London SW1P 3PA, United Kingdom</p>
+                        </div>
+                    </div>
+
+                    <div class="slideWtV">
+                        <img src="/London Page/Images/What to visit/The British Museum.jpg" alt="The British Museum">
+                        <div class="slide-contentWtV">
+                            <h1>The British Museum</h1>
+                            <p>Great Russell St, London WC1B 3DG, United Kingdom</p>
+                        </div>
+                    </div>
+
+                    <div class="slideWtV">
+                        <img src="/London Page/Images/What to visit/Natural History Museum.jpg"
+                            alt="Natural History Museum">
+                        <div class="slide-contentWtV">
+                            <h1>Natural History Museum</h1>
+                            <p>Cromwell Rd, South Kensington, London SW7 5BD, United Kingdom</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <button class="prevBtnWtV" id="prevBtnWtV">Previous</button>
+            <button class="nextBtnWtV" id="nextBtnWtV">Next</button>
+
+        </div>
+
+        <hr>
+
+        <!-- Where to eat -->
+        <h1 class="WtE-title">Where to Eat</h1>
+
+        <div class="WtE-container">
+
+            <!-- Launceston Place -->
+            <div class="launcestonplace-container">
+                <img src="/London Page/Images/Where to eat/Launceston Place.jpg" alt="Launceston Place">
+                <h1>Launceston Place</h1>
+
+                <div class="launcestonplace-rating">
+                    <a href="https://www.tripadvisor.com/Restaurant_Review-g186338-d719675-Reviews-Launceston_Place-London_England.html"
+                        target="_blank">
+                        <button class="tripadvisor-btn">
+                            <img src="https://img.icons8.com/color/48/tripadvisor.png" alt="tripadvisorIcon" />
+                        </button>
+                    </a>
+                </div>
+                <p>€€€ - €€€€ European, British, Vegetarian Friendly</p>
+                <p>
+                    <img class="map-icon" src="https://img.icons8.com/material-outlined/24/384469/place-marker--v2.png"
+                        alt="place-marker--v2" />
+                    1A Launceston Place, London W8 5RL England
+                </p>
+
+                <p>
+                    <img class="phone-icon" src="https://img.icons8.com/ios-filled/50/384469/ringer-volume.png"
+                        alt="ringer-volume" />
+                    +44 20 7937 6912
+                </p>
+            </div>
+
+            <!-- The Ledbury -->
+            <div class="theledbury-container">
+                <img src="/London Page/Images/Where to eat/The Ledbury.jpg" alt="The Ledbury">
+                <h1>The Ledbury</h1>
+
+                <div class="theledbury-rating">
+                    <a href="https://www.tripadvisor.com/Restaurant_Review-g186338-d720761-Reviews-The_Ledbury-London_England.html"
+                        target="_blank">
+                        <button class="tripadvisor-btn">
+                            <img width="48" height="48" src="https://img.icons8.com/color/48/tripadvisor.png"
+                                alt="tripadvisorIcon" />
+                        </button>
+                    </a>
+                </div>
+                <p>€€€ - €€€€ European, British, Vegetarian Friendly</p>
+                <p>
+                    <img class="map-icon" src="https://img.icons8.com/material-outlined/24/384469/place-marker--v2.png"
+                        alt="place-marker--v2" />
+                    127 Ledbury Road, London W11 2AQ England
+                </p>
+
+                <p>
+                    <img class="phone-icon" src="https://img.icons8.com/ios-filled/50/384469/ringer-volume.png"
+                        alt="ringer-volume" />
+                    +44 20 7792 9090
+                </p>
+            </div>
+
+            <!-- Ormer Mayfair -->
+            <div class="ormermayfair-container">
+                <img src="/London Page/Images/Where to eat/Ormer Mayfair.jpg" alt="Ormer Mayfair">
+                <h1>Ormer Mayfair</h1>
+
+                <div class="ormermayfair-rating">
+                    <a href="https://www.tripadvisor.com/Restaurant_Review-g186338-d10682050-Reviews-Ormer_Mayfair-London_England.html"
+                        target="_blank">
+                        <button class="tripadvisor-btn">
+                            <img width="48" height="48" src="https://img.icons8.com/color/48/tripadvisor.png"
+                                alt="tripadvisorIcon" />
+                        </button>
+                    </a>
+                </div>
+                <p>€€€ - €€€€ International, British, Gluten Free Options</p>
+                <p>
+                    <img class="map-icon" src="https://img.icons8.com/material-outlined/24/384469/place-marker--v2.png"
+                        alt="place-marker--v2" />
+                    7-12 Half Moon Street Flemings Mayfair Hotel, London W1J 7BH England
+                </p>
+
+                <p>
+                    <img class="phone-icon" src="https://img.icons8.com/ios-filled/50/384469/ringer-volume.png"
+                        alt="ringer-volume" />
+                    +44 20 7016 5601
+                </p>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <!-- Where to sleep -->
+        <h1 class="WtS-title">Where to Sleep</h1>
+
+        <div class="WtS-container">
+
+            <!-- Park Grand London Hyde Park -->
+            <div class="parkgrandlondonhydepark-container">
+                <img src="/London Page/Images/Where to sleep/Park Grand London Hyde Park.jpg"
+                    alt="Park Grand London Hyde Park">
+                <div class="parkgrandlondonhydepark-text-container">
+                    <h2 class="h2-stars">&#9733 &#9733 &#9733 &#9733</h2>
+                    <h1>Park Grand London Hyde Park </h1>
+
+                    <div class="parkgrandlondonhydepark-rating">
+                        <a href="https://www.tripadvisor.com/Hotel_Review-g186338-d3164384-Reviews-Park_Grand_London_Hyde_Park-London_England.html"
+                            target="_blank">
+                            <button class="tripadvisor-btn">
+                                <img class="tripadvisor-icon" src="https://img.icons8.com/color/48/tripadvisor.png"
+                                    alt="tripadvisorIcon" />
+                            </button>
+                        </a>
+                    </div>
+                    <p>4.5 Excellent</p>
+                    <p>
+                        <img class="map-icon"
+                            src="https://img.icons8.com/material-outlined/24/384469/place-marker--v2.png"
+                            alt="place-marker--v2" />
+                        78 - 82 Westbourne Terrace, London W2 6QA England
+                    </p>
+
+                    <p>
+                        <img class="phone-icon" src="https://img.icons8.com/ios-filled/50/384469/ringer-volume.png"
+                            alt="ringer-volume" />
+                        +44 20 7262 4521
+                    </p>
+
+                    <a href="https://www.parkgrandhydepark.co.uk/" target="_blank">
+                        <button class="ReserveBTN">Reserve Now</button>
+                    </a>
+                </div>
+            </div>
+
+            <!-- The Resident Covent Garden -->
+            <div class="theresidentcoventgarden-container">
+                <img src="/London Page/Images/Where to sleep/The Resident Covent Garden.jpg"
+                    alt="The Resident Covent Garden">
+                <div class="theresidentcoventgarden-text-container">
+                    <h2 class="h2-stars">&#9733 &#9733 &#9733 &#9733</h2>
+                    <h1>The Resident Covent Garden</h1>
+
+                    <div class="theresidentcoventgarden-rating">
+                        <a href="https://www.tripadvisor.com/Hotel_Review-g186338-d15134890-Reviews-The_Resident_Covent_Garden-London_England.html"
+                            target="_blank">
+                            <button class="tripadvisor-btn">
+                                <img class="tripadvisor-icon" src="https://img.icons8.com/color/48/tripadvisor.png"
+                                    alt="tripadvisorIcon" />
+                            </button>
+                        </a>
+                    </div>
+                    <p>5.0 excellent</p>
+                    <p>
+                        <img class="map-icon"
+                            src="https://img.icons8.com/material-outlined/24/384469/place-marker--v2.png"
+                            alt="place-marker--v2" />
+                        51 Bedford Street, London WC2R 0PZ England
+                    </p>
+
+                    <p>
+                        <img class="phone-icon" src="https://img.icons8.com/ios-filled/50/384469/ringer-volume.png"
+                            alt="ringer-volume" />
+                        +44 20 3146 1790
+                    </p>
+
+                    <a href="https://resident.dbm.guestline.net/availability?hotel=NADCOV" target="_blank">
+                        <button class="ReserveBTN">Reserve Now</button>
+                    </a>
+                </div>
+            </div>
+
+            <!-- The Montcalm Royal London House -->
+            <div class="themontcalmroyallondonhouse-container">
+                <img src="/London Page/Images/Where to sleep/The Montcalm Royal London House.jpg"
+                    alt="The Montcalm Royal London House">
+                <div class="themontcalmroyallondonhouse-text-container">
+                    <h2 class="h2-stars">&#9733 &#9733 &#9733 &#9733 &#9733</h2>
+                    <h1>The Montcalm Royal London House</h1>
+
+                    <div class="themontcalmroyallondonhouse-rating">
+                        <a href="https://www.tripadvisor.com/Hotel_Review-g186338-d10810215-Reviews-The_Montcalm_Royal_London_House-London_England.html"
+                            target="_blank">
+                            <button class="tripadvisor-btn">
+                                <img class="tripadvisor-icon" src="https://img.icons8.com/color/48/tripadvisor.png"
+                                    alt="tripadvisorIcon" />
+                            </button>
+                        </a>
+                    </div>
+                    <p>5.0 Excellent</p>
+                    <p>
+                        <img class="map-icon"
+                            src="https://img.icons8.com/material-outlined/24/384469/place-marker--v2.png"
+                            alt="place-marker--v2" />
+                        Royal London House 22-25 Finsbury Square, London EC2A 1DX England
+                    </p>
+
+                    <p>
+                        <img class="phone-icon" src="https://img.icons8.com/ios-filled/50/384469/ringer-volume.png"
+                            alt="ringer-volume" />
+                        +44 20 7479 2233
+                    </p>
+
+                    <a href="https://www.montcalmroyallondoncity.co.uk/" target="_blank">
+                        <button class="ReserveBTN">Reserve Now</button>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- Scroll to top BTN -->
+        <button class="up-arrow-btn" onclick="scrollToTop()">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24" width="18" viewBox="0 0 384 512">
+                <path
+                    d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160"
+                    fill="#384469" />
+            </svg>
+        </button>
+
+
+        <!-- Footer -->
+        <footer class="footer-TE">
+            <div class="footer-conteudo">
+                <div class="footer-socials">
+                    <div class="footerlogo-container">
+                        <img src="/Images/Travel Enthusiasts 1.png" alt="Logo TE 1">
+                    </div>
+                    <div class="socials-container">
+                        <a href="https://www.instagram.com/_te2023_/" target="_blank">
+                            <img class="insta" src="/Images/icons/instagram.png" alt="Instagram">
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCZZ5yRaYqaW_PMWc9VqOu4g" target="_blank">
+                            <img class="youtube" src="/Images/icons/youtube.png" alt="Twitter">
+                        </a>
+                        <a href="https://www.facebook.com/"> <!-- Alterar links -->
+                            <img class="facebook" src="/Images/icons/facebook.png" alt="Facebook">
+                        </a>
+                    </div>
+                    <h6 class="rights-reservedTXT">© 2023 Travel Enthusiasts. All rights reserved.</h6>
+                </div>
+
+                <div class="vertical-line1"></div>
+
+                <h6 class="newsletter-txt">Newsletter</h6>
+                <div class="newsletter-container">
+                    <form action="URL_DO_SEU_FORMULARIO_MAILCHIMP" method="post"> <!-- usar Mailchimp -->
+                        <input type="emailInput" id="newsletterInputTxt" name="email" placeholder="Enter your email"
+                            required>
+                        <button type="subBtn">Subscribe</button>
+                    </form>
+                </div>
+
+                <div class="vertical-line2"></div>
+
+                <div class="contacts-container">
+                    <a href="/Contact us page/contactus.html">
+                        <h6 class="containerTxt-1">Contact Us</h6>
+                    </a>
+                    <a href="/Terms of Service page/termsofservice.html">
+                        <h6 class="containerTxt-2">Terms of Service</h6>
+                    </a>
+                    <a href="/Privacy Policy page/privacypolicy.html">
+                        <h6 class="containerTxt-3">Privacy Policy</h6>
+                    </a>
+                </div>
+
+            </div>
+        </footer>
+
+    </main>
+
+    <script src="/London Page/londonscripts.js"></script>
+</body>
+
+</html>
