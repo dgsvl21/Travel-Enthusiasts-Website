@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paris</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@300;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/Paris Page/parisstyle.css" />
+</head>
+
+<body>
+
+    <div class="landing-container" id="landing-section">
+        <div class="landing-image"></div>
+        <div class="landing-layer1"></div>
+
+        <button class="scroll-button" onclick="scrollToMain()">
+            <svg class="arrows">
+                <path class="a1" d="M0 0 L30 32 L60 0"></path>
+                <path class="a2" d="M0 20 L30 52 L60 20"></path>
+                <path class="a3" d="M0 40 L30 72 L60 40"></path>
+            </svg>
+        </button>
+
+    </div>
+
+    <main id="main">
+        <nav class="navbar" id="navbar">
+            <a class="navbarlogo-container" href="/Home page/index.html">
+                <img id="nav-logo" src="/Images/Travel Enthusiasts 2 PEQUENO.png" alt="TravelEnthusiasts" />
+            </a>
+            <div class="menudropdown-container">
+                <div class="menu-links" id="menu-links">
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="20" width="17.5" viewBox="0 0 448 512">
+                                <path fill="#ffffff"
+                                    d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+                            </svg>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="/Home page/index.html">Home</a>
+                            <a href="/Destinations page/destinations.html">Destinations</a>
+                            <a href="/Recommended Website page/recommendedwebsite.html">Recommended Websites</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Conteudo da pagina -->
+
+        <!-- btns -->
+        <div class="btns-container">
+            <button class="btns" id="PoIbtn">Points of interest</button>
+            <button class="btns" id="WtVbtn">What to visit</button>
+            <button class="btns" id="WtEbtn">Where to eat</button>
+            <button class="btns" id="WtSbtn">Where to sleep</button>
+        </div>
+
+        <hr>
+
+        <!-- inicio do conteudo -->
+        <h1 class="paris-title">WHY PARIS?</h1>
+        <p class="paris-description">
+            Paris, the "City of Love," stands as a global tourism icon due to its unique blend of elegance, history, and
+            culture. <br>
+            With iconic landmarks such as the Eiffel Tower and the Louvre Museum, its charming streets and cafes provide
+            an enchanting experience. <br>
+            The romantic atmosphere, refined gastronomy, and rich artistic heritage <br>
+            make Paris an irresistible <br>
+            destination for travelers seeking beauty and charm. <br>
+        </p>
+
+        <hr>
+
+        <div class="paris_wallpaper-container">
+            <img class="paris-wallpaper2" src="/Paris Page/Images/Paris Wallpaper 2.jpg" alt="Paris">
+        </div>
+
+        <hr>
+
+        <!-- Points of Interest -->
+        <h1 class="PoI-title">Points of Interest</h1>
+        <div class="PoI-container">
+
+            <div class="PoI_slider-container">
+
+                <div class="sliderPoI">
+
+                    <div class="slidePoI">
+                        <img src="/Paris Page/Images/Points of interest/Torre Eiffel.jpg" alt="Torre Eiffel">
+                        <div class="slide-contentPoI">
+                            <h1>Torre Eiffel</h1>
+                            <p>Champ de Mars, 5 Av. Anatole France, 75007 Paris, France</p>
+                        </div>
+                    </div>
+
+                    <div class="slidePoI">
+                        <img src="/Paris Page/Images/Points of interest/Arc de Triomphe.jpg" alt="Arc de Triomphe">
+                        <div class="slide-contentPoI">
+                            <h1>Arc de Triomphe</h1>
+                            <p>Pl. Charles de Gaulle, 75008 Paris, France</p>
+                        </div>
+                    </div>
+
+                    <div class="slidePoI">
+                        <img src="/Paris Page/Images/Points of interest/Luxembourg Gardens.jpg"
+                            alt="Jardin du Luxembourg">
+                        <div class="slide-contentPoI">
+                            <h1>Jardin du Luxembourg</h1>
+                            <p>75006 Paris, France</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <button class="prevBtnPoI" id="prevBtnPoI">Previous</button>
+            <button class="nextBtnPoI" id="nextBtnPoI">Next</button>
+
+        </div>
+
+        <hr>
+
+        <!-- What to Vist -->
+        <h1 class="WtV-title">What to Visit</h1>
+        <div class="WtV-container">
+
+            <div class="WtV_slider-container">
+
+                <div class="sliderWtV">
+
+                    <div class="slideWtV">
+                        <img src="/Paris Page/Images/What to visit/Louvre Museum.jpg" alt="The Louvre">
+                        <div class="slide-contentWtV">
+                            <h1>Musée du Louvre</h1>
+                            <p>75001 Paris, France</p>
+                        </div>
+                    </div>
+
+                    <div class="slideWtV">
+                        <img src="/Paris Page/Images/What to visit/Musée d'Orsay.jpg" alt="Musée d'Orsay">
+                        <div class="slide-contentWtV">
+                            <h1>Musée d'Orsay</h1>
+                            <p>Esplanade Valéry Giscard d'Estaing, 75007 Paris, France</p>
+                        </div>
+                    </div>
+
+                    <div class="slideWtV">
+                        <img src="/Paris Page/Images/What to visit/Notre Dame.jpg" alt="Notre Dame">
+                        <div class="slide-contentWtV">
+                            <h1>Cathédrale Notre-Dame de Paris</h1>
+                            <p>6 Parvis Notre-Dame - Pl. Jean-Paul II, 75004 Paris, France</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <button class="prevBtnWtV" id="prevBtnWtV">Previous</button>
+            <button class="nextBtnWtV" id="nextBtnWtV">Next</button>
+
+        </div>
+
+        <hr>
+
+        <!-- Where to eat -->
+        <h1 class="WtE-title">Where to Eat</h1>
+
+        <div class="WtE-container">
+
+            <!-- Bistrot Instinct -->
+            <div class="bistrotinstinct-container">
+                <img src="/Paris Page/Images/Where to eat/Bistrot Instinct.jpg" alt="Bistrot Instinct">
+                <h1>Bistrot Instinct</h1>
+
+                <div class="bistrotinstinct-rating">
+                    <a href="https://www.tripadvisor.com/Restaurant_Review-g187147-d16846235-Reviews-Bistrot_Instinct-Paris_Ile_de_France.html"
+                        target="_blank">
+                        <button class="tripadvisor-btn">
+                            <img src="https://img.icons8.com/color/48/tripadvisor.png" alt="tripadvisorIcon" />
+                        </button>
+                    </a>
+                </div>
+                <p>€€ - €€€ French, European, Healthy</p>
+                <p>
+                    <img class="map-icon" src="https://img.icons8.com/material-outlined/24/384469/place-marker--v2.png"
+                        alt="place-marker--v2" />
+                    19 Rue de Picardie, 75003 Paris, France
+                </p>
+
+                <p>
+                    <img class="phone-icon" src="https://img.icons8.com/ios-filled/50/384469/ringer-volume.png"
+                        alt="ringer-volume" />
+                    +33 1 42 78 93 06
+                </p>
+            </div>
+
+            <!-- Habile. -->
+            <div class="habile-container">
+                <img src="/Paris Page/Images/Where to eat/Habile..jpg" alt="Habile.">
+                <h1>HABILE.</h1>
+
+                <div class="habile-rating">
+                    <a href="https://www.tripadvisor.com/Restaurant_Review-g187147-d23556965-Reviews-Habile-Paris_Ile_de_France.html"
+                        target="_blank">
+                        <button class="tripadvisor-btn">
+                            <img width="48" height="48" src="https://img.icons8.com/color/48/tripadvisor.png"
+                                alt="tripadvisorIcon" />
+                        </button>
+                    </a>
+                </div>
+                <p>€€ - €€€ French, Contemporary, Gastropub</p>
+                <p>
+                    <img class="map-icon" src="https://img.icons8.com/material-outlined/24/384469/place-marker--v2.png"
+                        alt="place-marker--v2" />
+                    16 Rue de Lancry, 75010 Paris, France
+                </p>
+
+                <p>
+                    <img class="phone-icon" src="https://img.icons8.com/ios-filled/50/384469/ringer-volume.png"
+                        alt="ringer-volume" />
+                    +33 1 44 63 82 62
+                </p>
+            </div>
+
+            <!--Il était un square -->
+            <div class="iletaitunsquare-container">
+                <img src="/Paris Page/Images/Where to eat/Il Etait Un Square.jpg" alt="Il était un square">
+                <h1>Il était un square</h1>
+
+                <div class="iletaitunsquare-rating">
+                    <a href="https://www.tripadvisor.com/Restaurant_Review-g187147-d6575305-Reviews-Il_Etait_Un_Square-Paris_Ile_de_France.html"
+                        target="_blank">
+                        <button class="tripadvisor-btn">
+                            <img width="48" height="48" src="https://img.icons8.com/color/48/tripadvisor.png"
+                                alt="tripadvisorIcon" />
+                        </button>
+                    </a>
+                </div>
+                <p>€€ - €€€ French, Steakhouse, European</p>
+                <p>
+                    <img class="map-icon" src="https://img.icons8.com/material-outlined/24/384469/place-marker--v2.png"
+                        alt="place-marker--v2" />
+                    54 rue Corvisart, 75013 Paris France
+                </p>
+
+                <p>
+                    <img class="phone-icon" src="https://img.icons8.com/ios-filled/50/384469/ringer-volume.png"
+                        alt="ringer-volume" />
+                    +33 1 43 37 68 07
+                </p>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <!-- Where to sleep -->
+        <h1 class="WtS-title">Where to Sleep</h1>
+
+        <div class="WtS-container">
+
+            <!-- Hôtel Astra Opéra - Astotel -->
+            <div class="hotelastraopera-container">
+                <img src="/Paris Page/Images/Where to sleep/Hôtel Astra Opéra - Astotel.jpg"
+                    alt="Hôtel Astra Opéra - Astotel">
+                <div class="hotelastraopera-text-container">
+                    <h2 class="h2-stars">&#9733 &#9733 &#9733 &#9733</h2>
+                    <h1>Hôtel Astra Opéra - Astotel</h1>
+
+                    <div class="hotelastraopera-rating">
+                        <a href="https://www.tripadvisor.com/Hotel_Review-g187147-d229968-Reviews-Hotel_Astra_Opera_Astotel-Paris_Ile_de_France.html"
+                            target="_blank">
+                            <button class="tripadvisor-btn">
+                                <img class="tripadvisor-icon" src="https://img.icons8.com/color/48/tripadvisor.png"
+                                    alt="tripadvisorIcon" />
+                            </button>
+                        </a>
+                    </div>
+                    <p>5.0 Excellent</p>
+                    <p>
+                        <img class="map-icon"
+                            src="https://img.icons8.com/material-outlined/24/384469/place-marker--v2.png"
+                            alt="place-marker--v2" />
+                        29 rue de Caumartin 9th Arr., 75009 Paris France
+                    </p>
+
+                    <p>
+                        <img class="phone-icon" src="https://img.icons8.com/ios-filled/50/384469/ringer-volume.png"
+                            alt="ringer-volume" />
+                        +33 1 42 65 15 15
+                    </p>
+
+                    <a href="https://www.secure-hotel-booking.com/smart/Gp-Astotel/21E2-6664/en-US/?tduid=undefined"
+                        target="_blank">
+                        <button class="ReserveBTN">Reserve Now</button>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Hôtel Grand Powers -->
+            <div class="hotelgrandpowers-container">
+                <img src="/Paris Page/Images/Where to sleep/Hôtel Grand Powers.jpg" alt="Hôtel Grand Powers">
+                <div class="hotelgrandpowers-text-container">
+                    <h2 class="h2-stars">&#9733 &#9733 &#9733 &#9733 &#9733</h2>
+                    <h1>Hôtel Grand Powers</h1>
+
+                    <div class="hotelgrandpowers-rating">
+                        <a href="https://www.tripadvisor.com/Hotel_Review-g187147-d228837-Reviews-Hotel_Grand_Powers-Paris_Ile_de_France.html"
+                            target="_blank">
+                            <button class="tripadvisor-btn">
+                                <img class="tripadvisor-icon" src="https://img.icons8.com/color/48/tripadvisor.png"
+                                    alt="tripadvisorIcon" />
+                            </button>
+                        </a>
+                    </div>
+                    <p>5.0 Excellent</p>
+                    <p>
+                        <img class="map-icon"
+                            src="https://img.icons8.com/material-outlined/24/384469/place-marker--v2.png"
+                            alt="place-marker--v2" />
+                        52 rue Francois 1er, 75008 Paris France
+                    </p>
+
+                    <p>
+                        <img class="phone-icon" src="https://img.icons8.com/ios-filled/50/384469/ringer-volume.png"
+                            alt="ringer-volume" />
+                        +33 1 47 23 91 05
+                    </p>
+
+                    <a href="https://be.synxis.com/?adult=2&arrive=2024-02-02&chain=22402&child=0&currency=EUR&depart=2024-02-03&hotel=1985&level=hotel&locale=en-US&rooms=1&src=24C "
+                        target="_blank">
+                        <button class="ReserveBTN">Reserve Now</button>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Hôtel Malte - Astotel -->
+            <div class="hotelmalteastotel-container">
+                <img src="/Paris Page/Images/Where to sleep/Hotel Malte - Astotel.jpg" alt="Hotel Malte - Astotel">
+                <div class="hotelmalteastotel-text-container">
+                    <h2 class="h2-stars">&#9733 &#9733 &#9733 &#9733</h2>
+                    <h1>Hôtel Malte - Astotel</h1>
+
+                    <div class="hotelmalteastotel-rating">
+                        <a href="https://www.tripadvisor.com/Hotel_Review-g187147-d228694-Reviews-Hotel_Malte_Astotel-Paris_Ile_de_France.html"
+                            target="_blank">
+                            <button class="tripadvisor-btn">
+                                <img class="tripadvisor-icon" src="https://img.icons8.com/color/48/tripadvisor.png"
+                                    alt="tripadvisorIcon" />
+                            </button>
+                        </a>
+                    </div>
+                    <p>5.0 Excellent</p>
+                    <p>
+                        <img class="map-icon"
+                            src="https://img.icons8.com/material-outlined/24/384469/place-marker--v2.png"
+                            alt="place-marker--v2" />
+                        63 rue de Richelieu, 75002 Paris France
+                    </p>
+
+                    <p>
+                        <img class="phone-icon" src="https://img.icons8.com/ios-filled/50/384469/ringer-volume.png"
+                            alt="ringer-volume" />
+                        +33 1 44 58 94 94
+                    </p>
+
+                    <a href="https://www.secure-hotel-booking.com/smart/Gp-Astotel/21E2-7524/en-US/?tduid=undefined"
+                        target="_blank">
+                        <button class="ReserveBTN">Reserve Now</button>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- Scroll to top BTN -->
+        <button class="up-arrow-btn" onclick="scrollToTop()">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24" width="18" viewBox="0 0 384 512">
+                <path
+                    d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160"
+                    fill="#384469" />
+            </svg>
+        </button>
+
+
+        <!-- Footer -->
+        <footer class="footer-TE">
+            <div class="footer-conteudo">
+                <div class="footer-socials">
+                    <div class="footerlogo-container">
+                        <img src="/Images/Travel Enthusiasts 1.png" alt="Logo TE 1">
+                    </div>
+                    <div class="socials-container">
+                        <a href="https://www.instagram.com/_te2023_/" target="_blank">
+                            <img class="insta" src="/Images/icons/instagram.png" alt="Instagram">
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCZZ5yRaYqaW_PMWc9VqOu4g" target="_blank">
+                            <img class="youtube" src="/Images/icons/youtube.png" alt="Twitter">
+                        </a>
+                        <a href="https://www.facebook.com/"> <!-- Alterar links -->
+                            <img class="facebook" src="/Images/icons/facebook.png" alt="Facebook">
+                        </a>
+                    </div>
+                    <h6 class="rights-reservedTXT">© 2023 Travel Enthusiasts. All rights reserved.</h6>
+                </div>
+
+                <div class="vertical-line1"></div>
+
+                <h6 class="newsletter-txt">Newsletter</h6>
+                <div class="newsletter-container">
+                    <form action="URL_DO_SEU_FORMULARIO_MAILCHIMP" method="post"> <!-- usar Mailchimp -->
+                        <input type="emailInput" id="newsletterInputTxt" name="email" placeholder="Enter your email"
+                            required>
+                        <button type="subBtn">Subscribe</button>
+                    </form>
+                </div>
+
+                <div class="vertical-line2"></div>
+
+                <div class="contacts-container">
+                    <a href="/Contact us page/contactus.html">
+                        <h6 class="containerTxt-1">Contact Us</h6>
+                    </a>
+                    <a href="/Terms of Service page/termsofservice.html">
+                        <h6 class="containerTxt-2">Terms of Service</h6>
+                    </a>
+                    <a href="/Privacy Policy page/privacypolicy.html">
+                        <h6 class="containerTxt-3">Privacy Policy</h6>
+                    </a>
+                </div>
+
+            </div>
+        </footer>
+
+    </main>
+
+    <script src="/Paris Page/parisscripts.js"></script>
+</body>
+
+</html>

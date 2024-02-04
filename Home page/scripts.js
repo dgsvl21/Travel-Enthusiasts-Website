@@ -9,7 +9,14 @@ function scrollToMain() {
 
 //search bar destinations
 const destinations = {
-  porto: '/Porto Page/portopage.html'
+  porto: '/Porto Page/portopage.html',
+  london: '/London Page/londonpage.html',
+  paris: ,
+  dubai: ,
+  milan ,
+  milano ,
+  new york ,
+  newyork ,
 };
 
 //working search bar
