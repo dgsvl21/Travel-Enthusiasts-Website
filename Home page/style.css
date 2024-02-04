@@ -142,6 +142,7 @@ body::-webkit-scrollbar-thumb:hover {
   color: rgb(56, 68, 105);
   font-size: 15px;
   transition: background-color 0.5s ease;
+  
 }
 
 .signupBtn:hover {
@@ -161,7 +162,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 /* Search bar */
-.barra-de-pesquisa {
+.barra-de-pesquisa-container {
   margin: 0 auto;
   width: 800px;
   background-color: #ffffff;
@@ -172,9 +173,14 @@ body::-webkit-scrollbar-thumb:hover {
   align-items: center;
   justify-content: left;
   position: relative;
+  transition: transform 0.6s ease-in-out;
 }
 
-.barra-de-pesquisa input[type="text"] {
+.barra-de-pesquisa-container:hover {
+  transform: scale(1.03);
+}
+
+.barra-de-pesquisa-container input[type="text"] {
   width: 560px;
   padding: 13px;
   border: none;
@@ -185,7 +191,7 @@ body::-webkit-scrollbar-thumb:hover {
   outline: 0;
 }
 
-.barra-de-pesquisa input[type="text"]::placeholder {
+.barra-de-pesquisa-container input[type="text"]::placeholder {
   text-align: right;
   margin-left: 180px;
   margin-right: 90px;
@@ -197,7 +203,7 @@ body::-webkit-scrollbar-thumb:hover {
   font-style:italic;
 }
 
-.barra-de-pesquisa button[type="submit"] {
+.barra-de-pesquisa-container button[type="submit"] {
   width: 150px;
   padding: 13px;
   border: none;
@@ -212,7 +218,7 @@ body::-webkit-scrollbar-thumb:hover {
   right: 0;
 }
 
-.barra-de-pesquisa button[type="submit"]:hover {
+.barra-de-pesquisa-container button[type="submit"]:hover {
   background-color: #272f49;
 }
 
@@ -338,6 +344,7 @@ body::-webkit-scrollbar-thumb:hover {
   padding: 12px 16px;
   display: block;
   text-decoration: none;
+  white-space: nowrap;
   transition: background-color 0.3s ease;
 }
 
@@ -370,7 +377,7 @@ main {
 
 
 /* "Destinos Populares" conteudo */
-.destinos_populares-container{
+.destinos_populares-container {
   display: flex;
   justify-content: space-between;
   max-width: 43%;
@@ -384,6 +391,11 @@ main {
   max-width: 250px;  
   margin: 0;
   box-sizing: border-box;
+  transition: transform 0.5s ease-in-out; 
+}
+
+.paris-container:hover {
+  transform: scale(1.05);
 }
 
 .wallpaper-paris {
@@ -438,6 +450,7 @@ main {
   border-radius: 2px;
   margin-top: 24px;
   margin-left: -10px;
+  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   transition: background-color 0.5s ease;
 }
@@ -453,6 +466,11 @@ main {
   max-width: 250px;  
   margin: 0;
   overflow: hidden;
+  transition: transform 0.5s ease-in-out;
+}
+
+.london-container:hover {
+  transform: scale(1.05);
 }
 
 .wallpaper-london {
@@ -505,6 +523,7 @@ main {
   border: 1px solid #b9ac92;
   border-radius: 2px;
   margin-left: -10px;
+  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   transition: background-color 0.5s ease;
 }
@@ -520,6 +539,11 @@ main {
   max-width: 250px;  
   margin: 0;
   overflow: hidden;
+  transition: transform 0.5s ease-in-out;  
+}
+
+.milan-container:hover {
+  transform: scale(1.05);
 }
 
 .wallpaper-milan {
@@ -572,6 +596,7 @@ main {
   border: 1px solid #b9ac92;
   border-radius: 2px;
   margin-left: -10px;
+  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   transition: background-color 0.5s ease;
 }
@@ -593,10 +618,13 @@ main {
   border-radius: 2px;
   cursor: pointer;
   margin: 20px auto 0;
+  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.3);
   transition: background-color 0.5s ease;
+  transition: transform 0.2s ease-in-out; 
 }
 
 .see-all-pd_btn:hover {
+  transform: scale(1.02); 
   background-color: #272f49;
 }
 
@@ -621,11 +649,16 @@ main {
 }
 
 /*PORTO*/
-.porto-container{
+.porto-container {
   position: relative;
   max-width: 250px;  
   margin: 0;
   overflow: hidden;
+  transition: transform 0.5s ease-in-out;
+}
+
+.porto-container:hover {
+  transform: scale(1.05);
 }
 
 .wallpaper-porto{
@@ -680,6 +713,7 @@ main {
   border-radius: 2px;
   margin-top: 24px;
   margin-left: -10px;
+  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   transition: background-color 0.5s ease;
 }
@@ -695,6 +729,11 @@ main {
   max-width: 250px;  
   margin: 0;
   overflow: hidden;
+  transition: transform 0.5s ease-in-out;
+}
+
+.newyork-container:hover {
+  transform: scale(1.05);
 }
 
 .wallpaper-newyork{
@@ -749,6 +788,7 @@ main {
   border-radius: 2px;
   margin-top: 24px;
   margin-left: -10px;
+  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   transition: background-color 0.5s ease;
 }
@@ -764,6 +804,11 @@ main {
   max-width: 250px;  
   margin: 0;
   overflow: hidden;
+  transition: transform 0.5s ease-in-out;
+}
+
+.dubai-container:hover {
+  transform: scale(1.05);
 }
 
 .wallpaper-dubai{
@@ -818,6 +863,7 @@ main {
   border-radius: 2px;
   margin-top: 24px;
   margin-left: -10px;
+  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   transition: background-color 0.5s ease;
 }
@@ -839,10 +885,13 @@ main {
   border-radius: 2px;
   cursor: pointer;
   margin: 20px auto 0;
+  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.3);
   transition: background-color 0.5s ease;
+  transition: transform 0.2s ease-in-out;
 }
 
 .see-all-te_r_btn:hover {
+  transform: scale(1.02);
   background-color: #272f49;
 }
 
