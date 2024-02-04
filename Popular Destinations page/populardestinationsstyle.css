@@ -86,6 +86,7 @@ body::-webkit-scrollbar-thumb:hover {
   padding: 12px 16px;
   display: block;
   text-decoration: none;
+  white-space: nowrap;
   transition: background-color 0.3s ease;
 }
 
@@ -167,7 +168,6 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .parisPDsee_more-btn {
-  box-shadow: 1px 1px 5px #000000;
   background-color: #384469;
   color: #ffffff;
   font-family: 'Spectral', serif;
@@ -179,10 +179,13 @@ body::-webkit-scrollbar-thumb:hover {
   cursor: pointer;
   margin-bottom: 80px;
   margin-left: 100px;
+  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.2);
   transition: background-color 0.5s ease;
+  transition: transform 0.2s ease-in-out;
 }
 
 .parisPDsee_more-btn:hover {
+  transform: scale(1.02);  
   background-color: #272f49;
 }
 
@@ -234,7 +237,6 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .londonPDsee_more-btn {
-  box-shadow: 1px 1px 5px #000000;
   background-color: #384469;
   color: #ffffff;
   font-family: 'Spectral', serif;
@@ -246,10 +248,13 @@ body::-webkit-scrollbar-thumb:hover {
   cursor: pointer;
   margin-bottom: 80px;
   margin-left: 100px;
+  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.2);
   transition: background-color 0.5s ease;
+  transition: transform 0.2s ease-in-out;
 }
 
 .londonPDsee_more-btn:hover {
+  transform: scale(1.02);  
   background-color: #272f49;
 }
 
@@ -301,7 +306,6 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .milanPDsee_more-btn {
-  box-shadow: 1px 1px 5px #000000;
   background-color: #384469;
   color: #ffffff;
   font-family: 'Spectral', serif;
@@ -313,10 +317,13 @@ body::-webkit-scrollbar-thumb:hover {
   cursor: pointer;
   margin-bottom: 80px;
   margin-left: 100px;
+  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.2);
   transition: background-color 0.5s ease;
+  transition: transform 0.2s ease-in-out;
 }
 
 .milanPDsee_more-btn:hover {
+  transform: scale(1.02);  
   background-color: #272f49;
 }
 
